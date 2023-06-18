@@ -2,7 +2,11 @@
 body {
     margin: 0px 0px;
     padding: 0px 0px;
-    background-color: #6C2D2D;
+    background: #6C2D2D;
+}
+
+body#body_alternativo {
+    background: #5d2525;
 }
 /* #endregion */
 
@@ -31,13 +35,19 @@ li {
 
 
 /* #region CABECERA */
-header#cabecera {
+header#cabecera, header#cabecera_chica {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
     padding: 1rem 2rem 3px;
     min-width: 425px;
     background: #803333;
+}
+
+header#cabecera_chica {
+    padding: 5px 2rem 3px;
+    min-width: 100px;
+    background: #0000003b;
 }
 /* #endregion */
 
@@ -65,7 +75,7 @@ img#logo_texto {
 
 
 /* #region BOTONERA */
-header#cabecera div#Botonera {
+header#cabecera div#Botonera, header#cabecera_chica div#Botonera {
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -77,7 +87,7 @@ header#cabecera div#Botonera {
     padding-bottom: 0px;
 }
 
-header#cabecera div#Botonera ul {
+header#cabecera div#Botonera ul, header#cabecera_chica div#Botonera ul {
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
@@ -89,7 +99,7 @@ header#cabecera div#Botonera ul {
     margin-bottom: 0px;
 }
 
-header#cabecera div#Botonera ul li {
+header#cabecera div#Botonera ul li, header#cabecera_chica div#Botonera ul li {
     font-size: 18px;
     color: #fff;
     list-style: none;
@@ -99,7 +109,7 @@ header#cabecera div#Botonera ul li {
     transition: box-shadow 350ms ease;
 }
 
-header#cabecera div#Botonera ul li:hover {
+header#cabecera div#Botonera ul li:hover, header#cabecera_chica div#Botonera ul li:hover {
     box-shadow: 0px 3px 0px white;
     background: #0000000a;
 }
@@ -116,7 +126,6 @@ header#cabecera div#Botonera ul li:hover {
 div#cuerpo {
     margin-left: auto;
     margin-right: auto;
-    background: #6C2D2D;
     float: none;
     display: table;
     min-width: 1070px;
@@ -125,7 +134,7 @@ div#cuerpo {
 
 
 /* #region BIENVENIDA */
-div#bienvenida {
+section#bienvenida {
     min-width: 500px;
     max-width: 950px;
     margin-left: auto;
@@ -135,7 +144,7 @@ div#bienvenida {
     margin-bottom: 10px;
 }
 
-div#bienvenida .titular_gigante {
+section#bienvenida .titular_gigante {
     width: inherit;
     margin: 0px 20px 10px 20px;
     font-size: 40px;
@@ -145,7 +154,7 @@ div#bienvenida .titular_gigante {
     display: block;
 }
 
-div#bienvenida .mensaje {
+section#bienvenida .mensaje {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
@@ -221,8 +230,8 @@ div#Redes ul li img {
 /* #endregion */
 
 
-/* #region ARTICULOS */
-div#articulos {
+/* #region ARTICULOS y PRESENTACIÓN */
+section#articulos, section#presentacion {
     min-width: 760px;
     max-width: 760px;
     margin-left: 0px;
@@ -231,7 +240,15 @@ div#articulos {
     float: left;
 }
 
-div#articulos span.titular {
+section#presentacion {
+    min-width: 400px;
+    max-width: 1076px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+section#articulos span.titular, section#presentacion span.titular {
     width: inherit;
     margin: 0px 20px 40px 20px;
     font-size: 30px;
@@ -243,7 +260,7 @@ div#articulos span.titular {
     border-bottom: solid 2px white;
 }
 
-div#articulos article {
+section#articulos article, section#presentacion article {
     color: white;
     padding: 20px 20px;
     margin: 0px 20px 30px 20px;
@@ -252,34 +269,39 @@ div#articulos article {
     background: #0000001c;
 }
 
-div#articulos article:hover {
+section#presentacion article {
+    background: #0000001a;
+}
+
+section#articulos article:hover, section#presentacion article:hover {
     box-shadow: 0px 6px 12px 0px #00000085;
     background: #00000033;
 }
 
-div#articulos article div.titulo {
+section#articulos article div.titulo, section#presentacion article div.titulo {
     font-size: 25px;
     font-weight: bold;
 }
 
-div#articulos article div.texto {
+section#articulos article div.texto, section#presentacion article div.texto {
     margin: 14px 0px 0px 0px;
     text-align: justify;
 }
 
-div#articulos article div.informacion {
+section#articulos article div.informacion, section#presentacion article div.informacion {
     margin: 15px 0px 0px 0px;
     font-size: 12px;
     font-weight: bold;
     text-align: right;
 }
 
-div#articulos article img.art_img {
+section#articulos article img.art_img, section#presentacion article img.art_img {
     width: 75px;
     float: left;
     margin: 0px 15px 0px 0px;
 }
 /* #endregion */
+
 
 
 
@@ -462,7 +484,7 @@ div.miembro_datos span#miembro_rol {
 
 
 /* #region PIE */
-div#pie {
+footer#pie {
     color: white;
     background-color: #833434;
     clear: both;
@@ -471,7 +493,7 @@ div#pie {
     width: 100%;
 }
 
-div#pie div#interior {
+footer#pie div#interior {
     display: table;
     padding: 25px 0px;
     margin-left: auto;
@@ -479,13 +501,13 @@ div#pie div#interior {
     min-width: 1070px;
 }
 
-div#pie div#interior div#izquierda, div#pie div#interior ul#derecha {
+footer#pie div#interior div#izquierda, footer#pie div#interior ul#derecha {
     font-size: 22px;
     font-weight: bolder;
     margin: 0px 20px;
 }
 
-div#pie div#interior div#izquierda a {
+footer#pie div#interior div#izquierda a {
     margin-left: 10px;
     text-decoration: none;
     color: white;
@@ -495,11 +517,11 @@ div#pie div#interior div#izquierda a {
 
 
 /* #region IZQUIERDA */
-div#pie div#interior div#izquierda {
+footer#pie div#interior div#izquierda {
     float: left;
 }
 
-div#pie div#interior div#izquierda img {
+footer#pie div#interior div#izquierda img {
     height: 23px;
     padding: 0px 10px;
     border-right: solid 2px white;
@@ -509,22 +531,22 @@ div#pie div#interior div#izquierda img {
 
 
 /* #region DERECHA */
-div#pie div#interior ul#derecha {
+footer#pie div#interior ul#derecha {
     float: right;
     list-style: none;
 }
 
-div#pie div#interior ul#derecha li {
+footer#pie div#interior ul#derecha li {
     display: inline-block;
     cursor: auto;
 }
 
-div#pie div#interior ul#derecha li img {
+footer#pie div#interior ul#derecha li img {
     height: 17px;
     vertical-align: middle;
 }
 
-div#pie div#interior ul#derecha li a {
+footer#pie div#interior ul#derecha li a {
     text-decoration: none;
     cursor: pointer;
     margin-right: 15px;
@@ -563,7 +585,7 @@ div#pie div#interior ul#derecha li a {
         height: 40px;
     }
 
-    div#articulos {
+    section#articulos {
         min-width: 40%;
         max-width: 71%;
     }
@@ -574,7 +596,7 @@ div#pie div#interior ul#derecha li a {
         max-width: 23.2%;
     }
     */
-    div#pie div#interior {
+    footer#pie div#interior {
         margin-left: 0px;
         margin-right: 0px;
         min-width: 100%;
@@ -608,7 +630,7 @@ div#pie div#interior ul#derecha li a {
         height: 30px;
     }
 
-    div#articulos {
+    section#articulos {
         min-width: 100%;
         max-width: 100%;
         float: none;
@@ -664,29 +686,29 @@ div#pie div#interior ul#derecha li a {
         text-align: center;
     }
 
-    div#pie div#interior {
+    footer#pie div#interior {
         margin-left: auto;
         margin-right: auto;
         min-width: fit-content;
     }
 
-    div#pie div#interior div#izquierda {
+    footer#pie div#interior div#izquierda {
         margin: 0px 0px 10px;
         float: none;
     }
     
-    div#pie div#interior ul#derecha {
+    footer#pie div#interior ul#derecha {
         float: none;
         text-align: center;
         margin: 30px auto 40px;
         padding-left: 0px;
     }
 
-    div#pie div#interior ul#derecha li img {
+    footer#pie div#interior ul#derecha li img {
         height: 30px;
     }
     
-    div#pie div#interior ul#derecha li a {
+    footer#pie div#interior ul#derecha li a {
         margin: 0px 30px;
     }
     /* #endregion */
