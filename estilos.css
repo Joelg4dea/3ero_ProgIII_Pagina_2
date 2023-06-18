@@ -1,0 +1,694 @@
+/* #region BODY */
+body {
+    margin: 0px 0px;
+    padding: 0px 0px;
+    background-color: #6C2D2D;
+}
+/* #endregion */
+
+
+/* #region OTROS */
+br {
+    user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+li {
+    user-select: none;
+    cursor: pointer;
+}
+/* #endregion */
+
+
+
+
+
+
+
+
+/* #region CABECERA */
+header#cabecera {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding: 1rem 2rem 3px;
+    min-width: 425px;
+    background: #803333;
+}
+/* #endregion */
+
+
+/* #region LOGO */
+div#logo_sec {
+    margin-right: auto;
+    vertical-align: top;
+    margin-left: auto;
+    width: 350px;
+}
+
+div img#logo {
+    height: 78px;
+    margin-top: 5px;
+}
+
+img#logo_texto {
+    height: 45px;
+    margin-top: 7px;
+    margin-left: 15px;
+    vertical-align: top;
+}
+/* #endregion */
+
+
+/* #region BOTONERA */
+header#cabecera div#Botonera {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    min-width: 360px;
+    max-width: 800px;
+    height: fit-content;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+header#cabecera div#Botonera ul {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-right: 0;
+    text-align: center;
+    float: right;
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecera div#Botonera ul li {
+    font-size: 18px;
+    color: #fff;
+    list-style: none;
+    padding: 15px 20px 15px;
+    display: inline-block;
+    margin: 0px 0px 0px 0px;
+    transition: box-shadow 350ms ease;
+}
+
+header#cabecera div#Botonera ul li:hover {
+    box-shadow: 0px 3px 0px white;
+    background: #0000000a;
+}
+/* #endregion */
+
+
+
+
+
+
+
+
+/* #region CUERPO */
+div#cuerpo {
+    margin-left: auto;
+    margin-right: auto;
+    background: #6C2D2D;
+    float: none;
+    display: table;
+    min-width: 1070px;
+}
+/* #endregion */
+
+
+/* #region BIENVENIDA */
+div#bienvenida {
+    min-width: 500px;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+div#bienvenida .titular_gigante {
+    width: inherit;
+    margin: 0px 20px 10px 20px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+div#bienvenida .mensaje {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    display: block;
+}
+/* #endregion */
+
+
+/* #region REDES */
+div#Redes {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+}
+
+div#Redes ul {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    float: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    height: 120px;
+}
+
+div#Redes ul li {
+    font-size: 0px;
+    font-weight: bolder;
+    color: #6c2d2d;
+    list-style: none;
+    padding: 15px 0px;
+    margin: 0px 15px 30px 15px;
+    display: inline-block;
+    border-radius: 0px;
+    transition: all 400ms ease;
+    background: #6c2d2d;
+    vertical-align: top;
+    max-height: 50px;
+}
+
+div#Redes ul li:hover {
+    box-shadow: 0px 25px 0px white;
+    background: #00000012;
+    font-size: 15px;
+    border: solid 5px white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div#Redes ul li img {
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+/* #endregion */
+
+
+/* #region ARTICULOS */
+div#articulos {
+    min-width: 760px;
+    max-width: 760px;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+div#articulos span.titular {
+    width: inherit;
+    margin: 0px 20px 40px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    display: block;
+    padding: 0px 0px 10px 0px;
+    border-bottom: solid 2px white;
+}
+
+div#articulos article {
+    color: white;
+    padding: 20px 20px;
+    margin: 0px 20px 30px 20px;
+    transition: all 400ms ease;
+    border-radius: 10px;
+    background: #0000001c;
+}
+
+div#articulos article:hover {
+    box-shadow: 0px 6px 12px 0px #00000085;
+    background: #00000033;
+}
+
+div#articulos article div.titulo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+div#articulos article div.texto {
+    margin: 14px 0px 0px 0px;
+    text-align: justify;
+}
+
+div#articulos article div.informacion {
+    margin: 15px 0px 0px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+}
+
+div#articulos article img.art_img {
+    width: 75px;
+    float: left;
+    margin: 0px 15px 0px 0px;
+}
+/* #endregion */
+
+
+
+
+
+
+
+
+/* #region LATERAL */
+div#cuerpo Aside {
+    min-width: 220px;
+    max-width: 220px;
+    margin-right: 0px;
+    padding: 0px 0px 60px 0px;
+    margin-left: 0px;
+    margin-top: 25px;
+    float: right;
+    color: white;
+}
+/* #endregion */
+
+
+/* #region ETIQUETAS Y MIEMBROS */
+div.etiquetas,
+div.miembros {
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+span#lateral_titulo {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+span#lateral_titulo:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ver_mas:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ver_mas {
+    font-size: 16px;
+    text-align: right;
+    margin-left: 5px;
+    margin-top: 15px;
+    font-weight: normal;
+}
+/* #endregion */
+
+
+/* #region ETIQUETAS */
+div.etiquetas {
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 70px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+div.etiquetas ul {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-right: 0;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: left;
+    display: block;
+    float: none;
+}
+
+div.etiquetas ul li {
+    display: inline;
+    padding: 0px 0px;
+    margin: 0px 10px;
+    list-style: none;
+    font-size: 12px;
+    font-weight: normal;
+    color: #fff;
+    opacity: 60%;
+    transition: all 400ms ease;
+}
+
+div.etiquetas ul li:hover {
+    opacity: 100%;
+    text-shadow: 0px 0px 5px white;
+}
+/* #endregion */
+
+
+/* #region MIEMBROS */
+div.miembros {
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: table;
+    min-width: 200px;
+    max-width: 200px;
+    height: fit-content;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+div.miembros ul {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0;
+    float: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.miembros ul li {
+    font-size: 12px;
+    color: #fff;
+    list-style: none;
+    padding: 10px 0px 0px 10px;
+    margin: 20px 10px 0px 0px;
+    min-height: 60px;
+    font-weight: normal;
+    cursor: auto;
+    transition: all 400ms ease;
+    border-radius: 30px;
+    vertical-align: top;
+}
+
+div.miembros ul li:hover {
+    box-shadow: 0px 0px 7px 0px #00000061;
+    background: #00000012;
+}
+
+div.miembros ul li img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+div.miembros ul li .miembro_datos {
+    float: left;
+    text-align: left;
+}
+
+div.miembro_datos span#miembro_nombre {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+div.miembro_datos span#miembro_rol {
+    display: inline-block;
+    margin-top: 2px;
+    font-size: 13px;
+}
+/* #endregion */
+
+
+
+
+
+
+
+
+/* #region PIE */
+div#pie {
+    color: white;
+    background-color: #833434;
+    clear: both;
+    display: block;
+    user-select: none;
+    width: 100%;
+}
+
+div#pie div#interior {
+    display: table;
+    padding: 25px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 1070px;
+}
+
+div#pie div#interior div#izquierda, div#pie div#interior ul#derecha {
+    font-size: 22px;
+    font-weight: bolder;
+    margin: 0px 20px;
+}
+
+div#pie div#interior div#izquierda a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+/* #endregion */
+
+
+/* #region IZQUIERDA */
+div#pie div#interior div#izquierda {
+    float: left;
+}
+
+div#pie div#interior div#izquierda img {
+    height: 23px;
+    padding: 0px 10px;
+    border-right: solid 2px white;
+    vertical-align: top;
+}
+/* #endregion */
+
+
+/* #region DERECHA */
+div#pie div#interior ul#derecha {
+    float: right;
+    list-style: none;
+}
+
+div#pie div#interior ul#derecha li {
+    display: inline-block;
+    cursor: auto;
+}
+
+div#pie div#interior ul#derecha li img {
+    height: 17px;
+    vertical-align: middle;
+}
+
+div#pie div#interior ul#derecha li a {
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 15px;
+    display: inline-block;
+}
+/* #endregion */
+
+
+
+
+
+
+
+
+/* #region PANTALLAS */
+@media (min-width: 940px) and (max-width: 1085px) {
+    /* #region terminado */
+    div#cuerpo {
+        min-width: 800px;
+    }
+
+    div#Redes ul {
+        height: 100px;
+    }
+
+    div#Redes ul li {
+        max-height: 40px;
+    }
+    
+    div#Redes ul li:hover {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    div#Redes ul li img {
+        height: 40px;
+    }
+
+    div#articulos {
+        min-width: 40%;
+        max-width: 71%;
+    }
+
+    /*
+    div#cuerpo Aside {
+        min-width: 23.2%;
+        max-width: 23.2%;
+    }
+    */
+    div#pie div#interior {
+        margin-left: 0px;
+        margin-right: 0px;
+        min-width: 100%;
+    }
+    /* #endregion */
+}
+
+@media (max-width: 939px) {
+    /* #region terminado */
+    div#cuerpo {
+        margin-left: 0px;
+        margin-right: 0px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    div#Redes ul {
+        height: 85px;
+    }
+
+    div#Redes ul li {
+        max-height: 30px;
+    }
+    
+    div#Redes ul li:hover {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    div#Redes ul li img {
+        height: 30px;
+    }
+
+    div#articulos {
+        min-width: 100%;
+        max-width: 100%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div#cuerpo Aside {
+        min-width: 80%;
+        max-width: 100%;
+        padding: 25px 0px 60px 0px;
+        margin-top: 60px;
+        float: none;
+        background: #0000001a;
+        border-top: solid 3px white;
+    }
+
+    div.etiquetas {
+        margin-bottom: 20px;
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    div.etiquetas ul {
+        text-align: center;
+    }
+
+    div.miembros {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    div.miembros ul {
+        display: block;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.miembros ul li {
+        display: inline-block;
+    }
+
+    div.miembros ul li .miembro_datos {
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    .ver_mas {
+        text-align: center;
+    }
+
+    div#pie div#interior {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: fit-content;
+    }
+
+    div#pie div#interior div#izquierda {
+        margin: 0px 0px 10px;
+        float: none;
+    }
+    
+    div#pie div#interior ul#derecha {
+        float: none;
+        text-align: center;
+        margin: 30px auto 40px;
+        padding-left: 0px;
+    }
+
+    div#pie div#interior ul#derecha li img {
+        height: 30px;
+    }
+    
+    div#pie div#interior ul#derecha li a {
+        margin: 0px 30px;
+    }
+    /* #endregion */
+}
+/* #endregion */
