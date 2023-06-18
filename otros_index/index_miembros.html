@@ -18,88 +18,41 @@
 
       <section id="presentacion">
          <span class="titular">Staff</span>
-
-         <article>
-            <img class="art_img" src="imagenes/articulos/camaras/8.gif" alt="Logo del sitio">
-            <div class="titulo">¿Cómo tomar una buena foto?</div>
-            <div class="texto">La fotografía es un arte que nos permite congelar momentos inolvidables y expresar nuestra creatividad.
-               Para lograrlo, es esencial dominar el manejo de una cámara. Las cámaras modernas ofrecen una amplia gama de opciones y funciones,
-               desde el ajuste del ISO hasta la apertura y la velocidad de obturación. Además, la composición, la iluminación y la perspectiva
-               son elementos clave para capturar imágenes impactantes. Experimenta y descubre cómo utilizar tu cámara como una herramienta para
-               plasmar tu visión única en cada fotografía.
-            </div>
-            <div class="informacion">Publicado el 14/05/2023 por @FrannyPants</div>
-         </article>
-
-         <article>
-            <img class="art_img" src="imagenes/articulos/celulares/8.gif" alt="Logo del sitio">
-            <div class="titulo">La nueva era de los plegables</div>
-            <div class="texto">Los celulares plegables han llegado para revolucionar nuestra experiencia móvil, ¡Prepárate para adentrarte en una dimensión tecnológica totalmente futurista! Con pantallas flexibles y diseños vanguardistas, estos dispositivos nos transportan hacia un futuro donde la portabilidad y la versatilidad se fusionan en un solo artefacto. Imagina tener un teléfono que se despliega para convertirse en una tableta, o que se pliega como un libro para caber en tu bolsillo. La era de los plegables ha llegado y con ella, un sinfín de posibilidades tecnológicas que desafían los límites de nuestra imaginación. ¡Prepárate para ser testigo de la magia de la innovación!
-            </div>
-            <div class="informacion">Publicado el 11/05/2023 por @ZestZoy</div>
-         </article>
-
-         <article>
-            <img class="art_img" src="imagenes/articulos/celulares/9.gif" alt="Logo del sitio">
-            <div class="titulo">Servicio técnico en casa</div>
-            <div class="texto">¿Sabías que puedes convertirte en el héroe de tus propios celulares? Te brindamos la oportunidad de aprender a reparar tus dispositivos con tus propias manos. Con guías detalladas y herramientas adecuadas, podrás solucionar problemas comunes como pantallas rotas, baterías agotadas y botones defectuosos. Ahora puedes evitar moverte y los costos de servicios. Además, adquirirás habilidades técnicas valiosas que podrás aplicar en el futuro. ¡No esperes más para tomar el control y convertirte en un maestro de la reparación de celulares en la comodidad de tu hogar!
-            </div>
-            <div class="informacion">Publicado el 10/05/2023 por @Franimal</div>
-         </article>
-
-         <article>
-            <img class="art_img" src="imagenes/articulos/celulares/9.gif" alt="Logo del sitio">
-            <div class="titulo">Servicio técnico en casa</div>
-            <div class="texto">¿Sabías que puedes convertirte en el héroe de tus propios celulares? Te brindamos la oportunidad de aprender a reparar tus dispositivos con tus propias manos. Con guías detalladas y herramientas adecuadas, podrás solucionar problemas comunes como pantallas rotas, baterías agotadas y botones defectuosos. Ahora puedes evitar moverte y los costos de servicios. Además, adquirirás habilidades técnicas valiosas que podrás aplicar en el futuro. ¡No esperes más para tomar el control y convertirte en un maestro de la reparación de celulares en la comodidad de tu hogar!
-            </div>
-            <div class="informacion">Publicado el 10/05/2023 por @Franimal</div>
-         </article>
+         <ul id="pres_elementos">
+            <li>
+               <img class="art_img" src="imagenes/articulos/camaras/8.gif" alt="Logo del sitio">
+               <div class="titulo">¿Cómo tomar una buena foto?</div>
+               <div class="texto">La fotografía es un arte que nos permite congelar momentos inolvidables y expresar nuestra creatividad.
+                  Para lograrlo, es esencial dominar el manejo de una cámara. Las cámaras modernas ofrecen una amplia gama de opciones y funciones,
+                  desde el ajuste del ISO hasta la apertura y la velocidad de obturación. Además, la composición, la iluminación y la perspectiva
+                  son elementos clave para capturar imágenes impactantes. Experimenta y descubre cómo utilizar tu cámara como una herramienta para
+                  plasmar tu visión única en cada fotografía.
+               </div>
+               <div class="informacion">Publicado el 14/05/2023 por @FrannyPants</div>
+            </li>
+         </ul>
 
       </section>
 
    </div>
 
-   <footer id="pie"></footer>
+   <footer id="pie_chico"></footer>
 
    <!-- código javascript  -->
+   <script src="../scripts/cargas.js"></script>
+   <script src="../scripts/otros.js"></script>
    <script>
-      // #region funciones que no se deben tocar
-      // Función para leer el contenido de una URL
-      async function leerContenido(URL) {
-         const response = await fetch(URL);
-         const contenido = await response.text();
-
-         return contenido;
-      }
-
-      // Función para devolver una variable con el contenido de un json.
-      async function leerJSON(URL) {
-         try {
-            return JSON.parse(await leerContenido(URL));
-         } catch (error) {
-            console.error('Error al leer el contenido:', URL, error);
-         }
-      }
-
-      // Función para insertar el contenido de una URL en un elemento HTML.
-      async function insertarContenido(URL, destino) {
-         try {
-            document.getElementById(destino).innerHTML = await leerContenido(URL);
-         } catch (error) {
-            console.error('Error al insertar el contenido:', URL, error);
-         }
-      }
-      // #endregion
-
       // función que realiza la inserción de todos los html, de manera asíncrona.
       async function precedimientoAsincrono() {
          // cargar JSON's
          var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
+         var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
 
 
          // insertar HTML's externos
          // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA LOS DEMÁS}
          await insertarContenido(cabeceras.chica, "cabecera_chica");
+         await insertarContenido(pies.secundario, "pie_chico");
       }
 
       // llamada al procedimiento asíncrono.

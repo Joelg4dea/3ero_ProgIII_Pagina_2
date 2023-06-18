@@ -41,12 +41,14 @@ header#cabecera, header#cabecera_chica {
     margin-bottom: 0px;
     padding: 1rem 2rem 3px;
     min-width: 425px;
+    min-height: 138px;
     background: #803333;
 }
 
 header#cabecera_chica {
+    min-width: 425px;
+    min-height: 51px;
     padding: 5px 2rem 3px;
-    min-width: 100px;
     background: #0000003b;
 }
 /* #endregion */
@@ -197,18 +199,19 @@ div#Redes ul {
 }
 
 div#Redes ul li {
+    transition: all 400ms ease;
+    display: inline-block;
+    max-height: 50px;
+    margin: 0px 15px 30px 15px;
+    padding: 15px 0px;
+    border-radius: 0px;
+    list-style: none;
+    vertical-align: top;
+    cursor: pointer;
+    color: #6c2d2d;
+    background: #6c2d2d;
     font-size: 0px;
     font-weight: bolder;
-    color: #6c2d2d;
-    list-style: none;
-    padding: 15px 0px;
-    margin: 0px 15px 30px 15px;
-    display: inline-block;
-    border-radius: 0px;
-    transition: all 400ms ease;
-    background: #6c2d2d;
-    vertical-align: top;
-    max-height: 50px;
 }
 
 div#Redes ul li:hover {
@@ -234,6 +237,7 @@ div#Redes ul li img {
 section#articulos, section#presentacion {
     min-width: 760px;
     max-width: 760px;
+    min-height: 850px;
     margin-left: 0px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -260,7 +264,7 @@ section#articulos span.titular, section#presentacion span.titular {
     border-bottom: solid 2px white;
 }
 
-section#articulos article, section#presentacion article {
+section#articulos article, section#presentacion ul#pres_elementos li {
     color: white;
     padding: 20px 20px;
     margin: 0px 20px 30px 20px;
@@ -269,36 +273,65 @@ section#articulos article, section#presentacion article {
     background: #0000001c;
 }
 
-section#presentacion article {
+section#presentacion ul#pres_elementos li {
     background: #0000001a;
+    border-radius: 0px;
 }
 
-section#articulos article:hover, section#presentacion article:hover {
+section#articulos article:hover, section#presentacion ul#pres_elementos li:hover {
     box-shadow: 0px 6px 12px 0px #00000085;
     background: #00000033;
 }
 
-section#articulos article div.titulo, section#presentacion article div.titulo {
+section#articulos article div.titulo, section#presentacion ul#pres_elementos li div.titulo {
     font-size: 25px;
     font-weight: bold;
 }
 
-section#articulos article div.texto, section#presentacion article div.texto {
+section#articulos article div.texto, section#presentacion ul#pres_elementos li div.texto {
     margin: 14px 0px 0px 0px;
     text-align: justify;
 }
 
-section#articulos article div.informacion, section#presentacion article div.informacion {
+section#articulos article div.informacion, section#presentacion ul#pres_elementos li div.informacion {
     margin: 15px 0px 0px 0px;
     font-size: 12px;
     font-weight: bold;
     text-align: right;
 }
 
-section#articulos article img.art_img, section#presentacion article img.art_img {
+section#articulos article img.art_img, section#presentacion ul#pres_elementos li img.art_img {
     width: 75px;
     float: left;
     margin: 0px 15px 0px 0px;
+}
+
+section#presentacion ul#pres_elementos {
+    float: none;
+    min-width: 400px;
+    max-width: 1076px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-block: 0px;
+    margin-inline: 0px;
+    padding-inline: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+section#presentacion ul#pres_elementos li {
+    background: #0000001a;
+    border-radius: 0px;
+    color: white;
+    padding: 20px 20px;
+    margin: 0px 20px 30px 20px;
+    transition: all 400ms ease;
+    display: block;
+}
+
+section#presentacion ul#pres_elementos li:hover {
+    box-shadow: 0px 6px 12px 0px #00000085;
+    background: #00000033;
 }
 /* #endregion */
 
@@ -347,8 +380,6 @@ span#lateral_titulo:hover {
 }
 
 .ver_mas:hover {
-    text-decoration: underline;
-    cursor: pointer;
     user-select: none;
 }
 
@@ -358,6 +389,16 @@ span#lateral_titulo:hover {
     margin-left: 5px;
     margin-top: 15px;
     font-weight: normal;
+}
+
+.ver_mas a {
+    color: white;
+    text-decoration: none;
+}
+
+.ver_mas a:hover {
+    color: #ffb2b2;
+    text-decoration: underline;
 }
 /* #endregion */
 
@@ -484,16 +525,21 @@ div.miembro_datos span#miembro_rol {
 
 
 /* #region PIE */
-footer#pie {
-    color: white;
-    background-color: #833434;
-    clear: both;
+footer#pie, footer#pie_chico {
     display: block;
-    user-select: none;
+    clear: both;
     width: 100%;
+    min-height: 76px;
+    background-color: #833434;
+    color: white;
+    user-select: none;
 }
 
-footer#pie div#interior {
+footer#pie_chico {
+    background-color: #0000003b;
+}
+
+footer#pie div#interior, footer#pie_chico div#interior {
     display: table;
     padding: 25px 0px;
     margin-left: auto;
@@ -501,13 +547,13 @@ footer#pie div#interior {
     min-width: 1070px;
 }
 
-footer#pie div#interior div#izquierda, footer#pie div#interior ul#derecha {
+footer#pie div#interior div#izquierda, footer#pie div#interior ul#derecha, footer#pie_chico div#interior div#izquierda, footer#pie_chico div#interior ul#derecha {
     font-size: 22px;
     font-weight: bolder;
     margin: 0px 20px;
 }
 
-footer#pie div#interior div#izquierda a {
+footer#pie div#interior div#izquierda a, footer#pie_chico div#interior div#izquierda a {
     margin-left: 10px;
     text-decoration: none;
     color: white;
@@ -517,11 +563,11 @@ footer#pie div#interior div#izquierda a {
 
 
 /* #region IZQUIERDA */
-footer#pie div#interior div#izquierda {
+footer#pie div#interior div#izquierda, footer#pie_chico div#interior div#izquierda {
     float: left;
 }
 
-footer#pie div#interior div#izquierda img {
+footer#pie div#interior div#izquierda img, footer#pie_chico div#interior div#izquierda img {
     height: 23px;
     padding: 0px 10px;
     border-right: solid 2px white;
@@ -531,22 +577,22 @@ footer#pie div#interior div#izquierda img {
 
 
 /* #region DERECHA */
-footer#pie div#interior ul#derecha {
+footer#pie div#interior ul#derecha, footer#pie_chico div#interior ul#derecha {
     float: right;
     list-style: none;
 }
 
-footer#pie div#interior ul#derecha li {
+footer#pie div#interior ul#derecha li, footer#pie_chico div#interior ul#derecha li {
     display: inline-block;
     cursor: auto;
 }
 
-footer#pie div#interior ul#derecha li img {
+footer#pie div#interior ul#derecha li img, footer#pie_chico div#interior ul#derecha li img {
     height: 17px;
     vertical-align: middle;
 }
 
-footer#pie div#interior ul#derecha li a {
+footer#pie div#interior ul#derecha li a, footer#pie_chico div#interior ul#derecha li a {
     text-decoration: none;
     cursor: pointer;
     margin-right: 15px;
@@ -596,7 +642,7 @@ footer#pie div#interior ul#derecha li a {
         max-width: 23.2%;
     }
     */
-    footer#pie div#interior {
+    footer#pie div#interior, footer#pie_chico div#interior {
         margin-left: 0px;
         margin-right: 0px;
         min-width: 100%;
@@ -686,29 +732,43 @@ footer#pie div#interior ul#derecha li a {
         text-align: center;
     }
 
-    footer#pie div#interior {
+    footer#pie div#interior, footer#pie_chico div#interior {
         margin-left: auto;
         margin-right: auto;
         min-width: fit-content;
     }
 
-    footer#pie div#interior div#izquierda {
+    footer#pie div#interior div#izquierda, footer#pie_chico div#interior div#izquierda {
         margin: 0px 0px 10px;
         float: none;
     }
-    
-    footer#pie div#interior ul#derecha {
+
+    footer#pie_chico div#interior div#izquierda {
+        margin: 10px auto;
+        display: block;
+        width: fit-content;
+    }
+
+    footer#pie div#interior ul#derecha, footer#pie_chico div#interior ul#derecha {
         float: none;
         text-align: center;
         margin: 30px auto 40px;
         padding-left: 0px;
     }
+    
+    footer#pie_chico div#interior ul#derecha {
+        margin-bottom: 40px;
+    }
+    
+    footer#pie_chico div#interior ul#derecha li {
+        margin-bottom: 40px;
+    }
 
-    footer#pie div#interior ul#derecha li img {
+    footer#pie div#interior ul#derecha li img, footer#pie_chico div#interior ul#derecha li img {
         height: 30px;
     }
     
-    footer#pie div#interior ul#derecha li a {
+    footer#pie div#interior ul#derecha li a, footer#pie_chico div#interior ul#derecha li a {
         margin: 0px 30px;
     }
     /* #endregion */
