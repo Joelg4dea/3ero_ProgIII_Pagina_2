@@ -10,37 +10,27 @@
 </head>
 
 <body id="body_alternativo">
-
-   <!-- el código de la cabecera (./cabecera/cabecera_chica) se inserta mediante javascript (VER LA PARTE INFERIOR DEL HTML).  -->
-   <header id="cabecera_chica"></header> 
+   <!-- los HTML se insertan dinamicamente mediante javascript. Ver carpeta JSON para saber la localizacion de los HTML y <Scripts> para la inserción  -->
+   <header id="cabecera_chica"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 10px;"></header> 
 
    <div id="cuerpo">
 
       <section id="presentacion">
+
          <span class="titular">Staff</span>
+
          <ul id="pres_elementos">
-            <li>
-               <img class="art_img" src="imagenes/articulos/camaras/8.gif" alt="Logo del sitio">
-               <div class="titulo">¿Cómo tomar una buena foto?</div>
-               <div class="texto">La fotografía es un arte que nos permite congelar momentos inolvidables y expresar nuestra creatividad.
-                  Para lograrlo, es esencial dominar el manejo de una cámara. Las cámaras modernas ofrecen una amplia gama de opciones y funciones,
-                  desde el ajuste del ISO hasta la apertura y la velocidad de obturación. Además, la composición, la iluminación y la perspectiva
-                  son elementos clave para capturar imágenes impactantes. Experimenta y descubre cómo utilizar tu cámara como una herramienta para
-                  plasmar tu visión única en cada fotografía.
-               </div>
-               <div class="informacion">Publicado el 14/05/2023 por @FrannyPants</div>
-            </li>
+            <li><img src="../imagenes/otros/cargando.gif" style="max-height: 80px;display: block;margin-left: auto;margin-right: auto;padding: 25px;"></li>
          </ul>
 
       </section>
 
    </div>
 
-   <footer id="pie_chico"></footer>
+   <footer id="pie_chico"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 25px;"></footer>
 
    <!-- código javascript  -->
    <script src="../scripts/cargas.js"></script>
-   <script src="../scripts/otros.js"></script>
    <script>
       // función que realiza la inserción de todos los html, de manera asíncrona.
       async function precedimientoAsincrono() {
@@ -51,9 +41,22 @@
 
          // insertar HTML's externos
          // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA LOS DEMÁS}
-         await insertarContenido(cabeceras.chica, "cabecera_chica");
-         await insertarContenido(pies.secundario, "pie_chico");
+         await reemplazarContenido(cabeceras.chica, "cabecera_chica");
+         await reemplazarContenido(pies.secundario, "pie_chico");
       }
+
+
+
+      //////////////////////////////////// document.querySelector('section#presentacion ul#pres_elementos li').remove();
+
+
+
+
+
+
+
+
+
 
       // llamada al procedimiento asíncrono.
       precedimientoAsincrono();

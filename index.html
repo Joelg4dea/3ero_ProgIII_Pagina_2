@@ -10,9 +10,8 @@
 </head>
 
 <body>
-
-   <!-- el código de la cabecera (./cabecera/cabecera_normal) se inserta mediante javascript (VER LA PARTE INFERIOR DEL HTML).  -->
-   <header id="cabecera"></header> 
+   <!-- los HTML se insertan dinamicamente mediante javascript. Ver carpeta JSON para saber la localizacion de los HTML y <Scripts> para la inserción  -->
+   <header id="cabecera"><img src="imagenes/otros/cargando.gif" style="max-height: 30px;text-align:center;display: block;margin-left: auto;margin-right: auto;margin-top: 50px;"></header> 
 
    <div id="cuerpo">
 
@@ -150,7 +149,7 @@
 
    </div>
 
-   <footer id="pie"></footer>
+   <footer id="pie"><img src="imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 25px;"></footer>
 
    <!-- código javascript  -->
    <script src="scripts/cargas.js"></script>
@@ -164,8 +163,8 @@
 
          // insertar HTML's externos
          // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA LOS DEMÁS}
-         await insertarContenido(cabeceras.normal, "cabecera");
-         await insertarContenido(pies.normal, "pie");
+         await reemplazarContenido(cabeceras.normal, "cabecera");
+         await reemplazarContenido(pies.normal, "pie");
       }
 
       // llamada al procedimiento asíncrono.

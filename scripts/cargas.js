@@ -16,6 +16,15 @@ async function leerJSON(URL) {
     }
 }
 
+// Función para reemplazar el contenido de un elemento por lo que esté en una URL.
+async function reemplazarContenido(URL, destino) {
+    try {
+        document.getElementById(destino).innerHTML = await leerContenido(URL);
+    } catch (error) {
+        console.error('Error al insertar el contenido:', URL, error);
+    }
+}
+
 // Función para insertar el contenido de una URL en un elemento HTML.
 async function insertarContenido(URL, destino) {
     try {
