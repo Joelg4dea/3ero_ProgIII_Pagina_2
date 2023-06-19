@@ -1,8 +1,24 @@
 {
-  "archivosHTML": [
-	"accesorios_JOHN.html",
-	"camaras_JOHN.html",
-	"celulares_JOHN.html",
-	"lentes_JOHN.html"
-  ]
+  "chiquitos": {
+	"Bernard_Fouquet": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/chiquitos/Bernard_Fouquet.html"
+	"Darnell_Rice": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/chiquitos/Darnell_Rice.html"
+	"Jesy_Mckinney": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/chiquitos/Jesy_Mckinney.html"
+	"Jim_French": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/chiquitos/Jim_French.html"
+	"Sean_Bennett": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/chiquitos/Sean_Bennett.html"
+	"Shanola_Hampton": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/chiquitos/Shanola_Hampton.html"
+	"Sonja_Kinski": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/chiquitos/Sonja_Kinski.html"
+	"Taylor_Knox": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/chiquitos/Taylor_Knox.html"
+	"Taymour_Ghazi": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/chiquitos/Taymour_Ghazi.html"
+  }
+  "normales": {
+	"Bernard_Fouquet": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/normales/Bernard_Fouquet.html"
+	"Darnell_Rice": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/normales/Darnell_Rice.html"
+	"Jesy_Mckinney": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/normales/Jesy_Mckinney.html"
+	"Jim_French": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/normales/Jim_French.html"
+	"Sean_Bennett": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/normales/Sean_Bennett.html"
+	"Shanola_Hampton": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/normales/Shanola_Hampton.html"
+	"Sonja_Kinski": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/normales/Sonja_Kinski.html"
+	"Taylor_Knox": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/normales/Taylor_Knox.html"
+	"Taymour_Ghazi": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/otros_index/elementos/miembros/normales/Taymour_Ghazi.html"
+  }
 }
