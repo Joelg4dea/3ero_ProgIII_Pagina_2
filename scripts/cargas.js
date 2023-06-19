@@ -33,4 +33,13 @@ async function insertarContenido(URL, destino) {
         console.error('Error al insertar el contenido:', URL, error);
     }
 }
+
+// Lo mismo que arriba pero con el selector CSS.
+async function insertarContenidoCSS(URL, destino) {
+    try {
+        document.querySelector(destino).insertAdjacentHTML('beforeend', await leerContenido(URL));
+    } catch (error) {
+        console.error('Error al insertar el contenido:', URL, error);
+    }
+}
 // #endregion
