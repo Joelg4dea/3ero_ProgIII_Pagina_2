@@ -25,6 +25,16 @@ li {
     user-select: none;
     cursor: pointer;
 }
+
+a.texto_enlace {
+    color: currentcolor;
+    text-decoration: none;
+}
+
+a.texto_enlace:hover {
+    text-decoration: underline;
+    color: #ffb2b2;
+}
 /* #endregion */
 
 
@@ -299,6 +309,29 @@ section#articulos article div.informacion {
     font-weight: bold;
     text-align: right;
 }
+
+article div.informacion .inf_etiquetas {
+    float: left;
+    overflow: hidden;
+    max-width: 350px;
+    height: 14px;
+    text-align: left;
+}
+
+article div.informacion .inf_etiquetas ul {
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+article div.informacion .inf_etiquetas ul li {
+    opacity: 30%;
+    margin: 0px 20px 0px 0px;
+}
+
+article div.informacion .inf_etiquetas ul li a:hover {
+    text-decoration: none;
+    color: currentColor;
+}
 /* #endregion */
 
 
@@ -347,27 +380,27 @@ section#presentacion ul#pres_elementos li div.miembro_datos {
     margin-left: 0px;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos span#miembro_nombre {
+section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_nombre {
     margin-top: 5px;
     font-size: 30px;
     font-weight: bolder;
     display: inline-block;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos span#miembro_rol {
+section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_rol {
     margin-top: 2px;
     font-size: 20px;
     display: inline-block;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos span#miembro_descripcion {
+section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_descripcion {
     margin-top: 17px;
     display: block;
     font-size: 15px;
     text-align: justify;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes {
+section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes {
     margin-top: 20px;
     margin-left: auto;
     display: table;
@@ -375,7 +408,7 @@ section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes {
     padding-bottom: 0px;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes ul {
+section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul {
     padding: 0px;
     margin: 0px auto;
     text-align: center;
@@ -383,11 +416,11 @@ section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes ul
     display: block;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes ul a {
+section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a {
     margin: 0px 10px;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes ul a li {
+section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li {
     transition: all 400ms ease;
     display: inline-block;
     border-radius: 0px;
@@ -399,12 +432,12 @@ section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes ul
     background: none;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes ul a li:hover {
+section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li:hover {
     box-shadow: none;
     background: none;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes ul a li img{
+section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li img{
     height: 22px;
     mix-blend-mode: multiply;
     background: #000000;
@@ -427,17 +460,7 @@ section#presentacion ul#pres_elementos li div.miembro_datos div#miembro_redes ul
     font-weight: normal;
 }
 
-.ver_mas a {
-    color: white;
-    text-decoration: none;
-}
-
-.ver_mas a:hover {
-    color: #ffb2b2;
-    text-decoration: underline;
-}
-
-section#presentacion ul#pres_elementos li div.miembro_datos span#miembro_descripcion div.ver_mas {
+section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_descripcion div.ver_mas {
     display: inline-block;
     margin-left: 0px;
     margin-top: 0px;
@@ -483,8 +506,6 @@ span#lateral_titulo {
 }
 
 span#lateral_titulo:hover {
-    text-decoration: underline;
-    cursor: pointer;
     user-select: none;
 }
 /* #endregion */
@@ -500,34 +521,40 @@ div.etiquetas {
     font-weight: bold;
 }
 
-div.etiquetas ul {
+div.etiquetas ul, article div.informacion .inf_etiquetas ul {
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;
     margin-right: 0;
-    margin-left: 5px;
-    margin-top: 10px;
     margin-bottom: 0px;
     text-align: left;
     display: block;
     float: none;
 }
 
-div.etiquetas ul li {
-    display: inline;
+div.etiquetas ul li, article div.informacion .inf_etiquetas ul li {
+    display: inline-block;
     padding: 0px 0px;
-    margin: 0px 10px;
     list-style: none;
     font-size: 12px;
     font-weight: normal;
     color: #fff;
-    opacity: 60%;
     transition: all 400ms ease;
 }
 
-div.etiquetas ul li:hover {
+div.etiquetas ul li:hover, article div.informacion .inf_etiquetas ul li:hover {
     opacity: 100%;
     text-shadow: 0px 0px 5px white;
+}
+
+div.etiquetas ul {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+div.etiquetas ul li {
+    margin: 0px 10px;
+    opacity: 60%;
 }
 /* #endregion */
 
@@ -543,6 +570,7 @@ div.miembros {
     height: fit-content;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    transition: all 400ms ease;
 }
 
 div.miembros ul {
@@ -590,14 +618,14 @@ div.miembros ul li div.miembro_datos {
     text-align: left;
 }
 
-div.miembros ul li div.miembro_datos span#miembro_nombre {
+div.miembros ul li div.miembro_datos span.miembro_nombre {
     display: inline-block;
     margin-top: 5px;
     font-size: 15px;
     font-weight: bolder;
 }
 
-div.miembros ul li div.miembro_datos span#miembro_rol {
+div.miembros ul li div.miembro_datos span.miembro_rol {
     display: inline-block;
     margin-top: 2px;
     font-size: 13px;
@@ -643,7 +671,7 @@ footer#pie div#interior div#izquierda, footer#pie div#interior ul#derecha, foote
 footer#pie div#interior div#izquierda a, footer#pie_chico div#interior div#izquierda a {
     margin-left: 10px;
     text-decoration: none;
-    color: white;
+    color: currentColor;
     cursor: pointer;
 }
 /* #endregion */

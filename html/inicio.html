@@ -45,7 +45,7 @@
                son elementos clave para capturar imágenes impactantes. Experimenta y descubre cómo utilizar tu cámara como una herramienta para
                plasmar tu visión única en cada fotografía.
             </div>
-            <div class="informacion">Publicado el 14/05/2023 por @FrannyPants</div>
+            <div class="informacion"><div class="inf_etiquetas"><ul><li><a class="texto_enlace" href="busqueda.html/?etiqueta=experimental">experimental</a></li><li>vvvv</li><li>ccc</li></ul></div>Publicado el <a class="texto_enlace" href="busqueda.html/?fecha=2023_05_14">14/05/2023</a> por <a class="texto_enlace" href="perfil_miembros.html/?usuario=FrannyPants">@FrannyPants</a></div>
          </article>
 
          <article>
@@ -75,7 +75,7 @@
       </section>
 
       <aside>
-         <div class="etiquetas"><span id="lateral_titulo">Etiquetas</span><br>
+         <div class="etiquetas"><span id="lateral_titulo"><a class="texto_enlace" href="Etiquetas.html">Etiquetas</a></span><br>
             <ul>
                <li>Samsung
                <li>Apple
@@ -101,14 +101,13 @@
                <li>Lomography
                <li>Polaroid
             </ul>
-
-            <div class="ver_mas"><a href="otros_index/index_miembros.html">Ver todas..</a></div>
+            <div class="ver_mas"><a class="texto_enlace" href="Etiquetas.html">Ver todas..</a></div>
          </div>
     
-         <div class="miembros"><span id="lateral_titulo">Staff</span><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin-right: 0px;max-height: 25px;float: right;">
+         <div class="miembros"><span id="lateral_titulo"><a class="texto_enlace" href="miembros.html">Staff</a></span><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin-right: 0px;max-height: 25px;float: right;">
             <ul>
             </ul>
-            <div class="ver_mas"><a href="otros_index/index_miembros.html">Ver todos..</a></div>
+            <div class="ver_mas"><a class="texto_enlace" href="miembros.html">Ver todos..</a></div>
          </div>
       </aside>
 
@@ -136,12 +135,12 @@
          // insertar lista de miembros de manera dinámica
          // eliminar el ícono de carga
 
-         // cargar todos los miembros desde la lista de miembros
-         for (const miembro of miembros.chiquitos) {
-            await insertarContenidoCSS(miembro, 'div.miembros ul');
+         // cargar los miembros desde la lista de miembros (solo 5)
+         for (let index = 0; index < 5; index++) {
+            await insertarContenidoCSS(miembros.chiquitos[index], 'div.miembros ul');
          }
 
-         document.querySelector('section#presentacion span.titular img.icono_de_carga').remove();
+         document.querySelector('div.miembros img.icono_de_carga').remove();
       }
 
       // Cosas que se hacen MIENTRAS el documento carga..
