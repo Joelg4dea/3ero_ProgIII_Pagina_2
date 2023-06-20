@@ -29,6 +29,7 @@ li {
 a.texto_enlace {
     color: currentcolor;
     text-decoration: none;
+    transition: all 400ms ease;
 }
 
 a.texto_enlace:hover {
@@ -284,13 +285,30 @@ section#articulos {
     margin-left: 0px;
     float: left;
 }
+
+body#body_alternativo div#cuerpo section#articulos {
+    margin-right: auto;
+    margin-left: auto;
+    float: none;
+}
 /* #endregion */
 
 /* #region ARTICULOS - interior */
-section#articulos article img.art_img {
-    width: 75px;
+section#articulos article div.imagen {
+    max-width: 75px;
+    max-height: 68px;
+    min-width: 75px;
+    min-height: 58px;
+    margin: 0px 10px 0px 0px;
     float: left;
-    margin: 0px 15px 0px 0px;
+}
+
+section#articulos article img.art_img {
+    max-width: inherit;
+    max-height: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 section#articulos article div.titulo {
@@ -401,7 +419,7 @@ section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_descrip
 }
 
 section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-left: auto;
     display: table;
     margin-bottom: 5px;
@@ -410,39 +428,46 @@ section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes {
 
 section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul {
     padding: 0px;
-    margin: 0px auto;
+    margin: 0px auto 0px 20px;
     text-align: center;
     float: none;
     display: block;
 }
 
 section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a {
-    margin: 0px 10px;
+    display: inline-block;
+    margin: 20px 10px 0px;
 }
 
 section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li {
-    transition: all 400ms ease;
+    transition: all 150ms ease;
     display: inline-block;
-    border-radius: 0px;
+    border-radius: 15px;
+    padding: 412px;
     list-style: none;
     vertical-align: top;
     cursor: pointer;
-    padding: 0px;
+    padding: 3px;
     margin: 0px;
     background: none;
+    mix-blend-mode: multiply;
+    display: flex;
+    border: solid 3px #000000;
+    background: black;
+    opacity: 25%;
 }
 
 section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li:hover {
-    box-shadow: none;
+    box-shadow: 0px 0px 0px 3px white;
     background: none;
+    mix-blend-mode: normal;
+    border: solid 3px #ffffff00;
+    background: none;
+    opacity: 90%;
 }
 
 section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li img{
-    height: 22px;
-    mix-blend-mode: multiply;
-    background: #000000;
-    border-radius: 0%;
-    border: solid 3px #000000;
+    height: 20px;
 }
 /* #endregion */
 
@@ -630,6 +655,26 @@ div.miembros ul li div.miembro_datos span.miembro_rol {
     margin-top: 2px;
     font-size: 13px;
 }
+
+div.miembro_datos div.miembro_usuario {
+    float: left;
+    display: flow-root;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 27px;
+    opacity: 40%;
+    color: white;
+    transition: all 400ms ease;
+}
+
+div.miembro_datos div.miembro_usuario:hover {
+    opacity: 100%;
+}
+
+div.miembro_datos div.miembro_usuario a.texto_enlace:hover {
+    color: currentcolor;
+}
+
 /* #endregion */
 
 
@@ -751,6 +796,10 @@ footer#pie div#interior ul#derecha li a, footer#pie_chico div#interior ul#derech
         max-width: 71%;
     }
 
+    article div.informacion .inf_etiquetas {
+        max-width: 50%;
+    }
+
     /*
     div#cuerpo Aside {
         min-width: 23.2%;
@@ -797,6 +846,10 @@ footer#pie div#interior ul#derecha li a, footer#pie_chico div#interior ul#derech
         float: none;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    article div.informacion .inf_etiquetas {
+        max-width: 38%;
     }
 
     div#cuerpo Aside {

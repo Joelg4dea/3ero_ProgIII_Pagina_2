@@ -34,44 +34,7 @@
       </section>
 
       <section id="articulos">
-         <span class="titular">Artículos Recientes</span>
-
-         <article>
-            <img class="art_img" src="../imagenes/articulos/camaras/8.gif" alt="Logo del sitio">
-            <div class="titulo">¿Cómo tomar una buena foto?</div>
-            <div class="texto">La fotografía es un arte que nos permite congelar momentos inolvidables y expresar nuestra creatividad.
-               Para lograrlo, es esencial dominar el manejo de una cámara. Las cámaras modernas ofrecen una amplia gama de opciones y funciones,
-               desde el ajuste del ISO hasta la apertura y la velocidad de obturación. Además, la composición, la iluminación y la perspectiva
-               son elementos clave para capturar imágenes impactantes. Experimenta y descubre cómo utilizar tu cámara como una herramienta para
-               plasmar tu visión única en cada fotografía.
-            </div>
-            <div class="informacion"><div class="inf_etiquetas"><ul><li><a class="texto_enlace" href="busqueda.html/?etiqueta=experimental">experimental</a></li><li>vvvv</li><li>ccc</li></ul></div>Publicado el <a class="texto_enlace" href="busqueda.html/?fecha=2023_05_14">14/05/2023</a> por <a class="texto_enlace" href="perfil_miembros.html/?usuario=FrannyPants">@FrannyPants</a></div>
-         </article>
-
-         <article>
-            <img class="art_img" src="../imagenes/articulos/celulares/8.gif" alt="Logo del sitio">
-            <div class="titulo">La nueva era de los plegables</div>
-            <div class="texto">Los celulares plegables han llegado para revolucionar nuestra experiencia móvil, ¡Prepárate para adentrarte en una dimensión tecnológica totalmente futurista! Con pantallas flexibles y diseños vanguardistas, estos dispositivos nos transportan hacia un futuro donde la portabilidad y la versatilidad se fusionan en un solo artefacto. Imagina tener un teléfono que se despliega para convertirse en una tableta, o que se pliega como un libro para caber en tu bolsillo. La era de los plegables ha llegado y con ella, un sinfín de posibilidades tecnológicas que desafían los límites de nuestra imaginación. ¡Prepárate para ser testigo de la magia de la innovación!
-            </div>
-            <div class="informacion">Publicado el 11/05/2023 por @ZestZoy</div>
-         </article>
-
-         <article>
-            <img class="art_img" src="../imagenes/articulos/celulares/9.gif" alt="Logo del sitio">
-            <div class="titulo">Servicio técnico en casa</div>
-            <div class="texto">¿Sabías que puedes convertirte en el héroe de tus propios celulares? Te brindamos la oportunidad de aprender a reparar tus dispositivos con tus propias manos. Con guías detalladas y herramientas adecuadas, podrás solucionar problemas comunes como pantallas rotas, baterías agotadas y botones defectuosos. Ahora puedes evitar moverte y los costos de servicios. Además, adquirirás habilidades técnicas valiosas que podrás aplicar en el futuro. ¡No esperes más para tomar el control y convertirte en un maestro de la reparación de celulares en la comodidad de tu hogar!
-            </div>
-            <div class="informacion">Publicado el 10/05/2023 por @Franimal</div>
-         </article>
-
-         <article>
-            <img class="art_img" src="../imagenes/articulos/celulares/9.gif" alt="Logo del sitio">
-            <div class="titulo">Servicio técnico en casa</div>
-            <div class="texto">¿Sabías que puedes convertirte en el héroe de tus propios celulares? Te brindamos la oportunidad de aprender a reparar tus dispositivos con tus propias manos. Con guías detalladas y herramientas adecuadas, podrás solucionar problemas comunes como pantallas rotas, baterías agotadas y botones defectuosos. Ahora puedes evitar moverte y los costos de servicios. Además, adquirirás habilidades técnicas valiosas que podrás aplicar en el futuro. ¡No esperes más para tomar el control y convertirte en un maestro de la reparación de celulares en la comodidad de tu hogar!
-            </div>
-            <div class="informacion">Publicado el 10/05/2023 por @Franimal</div>
-         </article>
-
+         <span class="titular">Artículos Recientes<img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin-top: 7px;max-height: 30px;float: right;"></span>
       </section>
 
       <aside>
@@ -124,22 +87,39 @@
          var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
          var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
          var miembros = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/miembros.json');
+         var articulos = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/articulos.json');
 
 
          // insertar HTML's externos
-         // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA EL FOOTER}
+         // cargado del contenido de la cabecera para insertarlo en <header id="cabecera"> {LO MISMO PARA EL FOOTER}
          reemplazarContenido(cabeceras.normal, "cabecera");
          reemplazarContenido(pies.normal, "pie");
 
 
-         // insertar lista de miembros de manera dinámica
-         // eliminar el ícono de carga
+         // insertar lista de artículos de manera dinámica
+         // concatenación de todos los artículos en una sola lista
+         var articulos = (articulos.accesorios).concat(articulos.camaras).concat(articulos.celulares).concat(articulos.lentes)
+         // remoción de la parte más redundante de los elementos, y sorteamiento según fecha (más recientes primero)
+         var articulos_url_chica = (articulos.map(function (articulo) { return articulo.replace(/^.*\//, ""); })).sort().reverse();
+         // insertado de los articulos más recientes de la lista de articulos (solo 10)
+         for (let index_a = 0; index_a < 10; index_a++) {
+            for (let index_b = 0; index_b < articulos.length; index_b++) {
+               if (articulos[index_b].includes(articulos_url_chica[index_a])) {
+                  await insertarContenidoCSS(articulos[index_b], 'div#cuerpo section#articulos');
+                  break;
+               }
+            }
+         }
+         // quitado del ícono de carga de artículos
+         document.querySelector('div#cuerpo section#articulos span.titular img.icono_de_carga').remove();
 
+
+         // insertar lista de miembros de manera dinámica
          // cargar los miembros desde la lista de miembros (solo 5)
          for (let index = 0; index < 5; index++) {
             await insertarContenidoCSS(miembros.chiquitos[index], 'div.miembros ul');
          }
-
+         // quitado del ícono de carga de miembros
          document.querySelector('div.miembros img.icono_de_carga').remove();
       }
 

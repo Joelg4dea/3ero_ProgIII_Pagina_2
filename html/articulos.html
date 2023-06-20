@@ -5,211 +5,72 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" type="text/css" href="estilos.css">
+   <link rel="stylesheet" type="text/css" href="../estilos.css">
    <TITLE>Mi primer documento HTML</TITLE>
 </head>
 
-<body>
-
-   <!-- el código de la cabecera (./cabecera/cabecera_normal) se inserta mediante javascript (VER LA PARTE INFERIOR DEL HTML).  -->
-   <header id="cabecera"></header> 
+<body id="body_alternativo">
+   <!-- los HTML se insertan dinamicamente mediante javascript. Ver carpeta JSON para saber la localizacion de los HTML y <Scripts> para la inserción  -->
+   <header id="cabecera_chica"><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 10px;"></header> 
 
    <div id="cuerpo">
-
-      <div id="bienvenida">
-         <div class="titular_gigante">¡Bienvenido a Lens 4 Gear!</div>
-
-         <div class="mensaje">En nuestra web podés encontrar reseñas y recomendaciones sobre productos/accesorios relacionados a la fotografía.<br><br
-            >¡Y También cosas variadas de la comunidad!<br><br><br
-            >No te olvides de seguir a la horda
-         </div>
-
-         <div id="Redes">
-            <ul>
-               <li><img src="imagenes/marcas/instagram_w.png">/Lens4Gear
-               <li><img src="imagenes/marcas/YouTube_w.png">/Lens4Gear
-               <li><img src="imagenes/marcas/facebook_w.png">/Lens4Gear
-               <li><img src="imagenes/marcas/twitter_w.png">@Lens4Gear
-            </ul>
-         </div>
-      </div>
-
-      <div id="articulos">
-         <span class="titular">Artículos recientes</span>
-
-         <article>
-            <img class="art_img" src="imagenes/articulos/camaras/8.gif" alt="Logo del sitio">
-            <div class="titulo">¿Cómo tomar una buena foto?</div>
-            <div class="texto">La fotografía es un arte que nos permite congelar momentos inolvidables y expresar nuestra creatividad.
-               Para lograrlo, es esencial dominar el manejo de una cámara. Las cámaras modernas ofrecen una amplia gama de opciones y funciones,
-               desde el ajuste del ISO hasta la apertura y la velocidad de obturación. Además, la composición, la iluminación y la perspectiva
-               son elementos clave para capturar imágenes impactantes. Experimenta y descubre cómo utilizar tu cámara como una herramienta para
-               plasmar tu visión única en cada fotografía.
-            </div>
-            <div class="informacion">Publicado el 14/05/2023 por @FrannyPants</div>
-         </article>
-
-         <article>
-            <img class="art_img" src="imagenes/articulos/celulares/8.gif" alt="Logo del sitio">
-            <div class="titulo">La nueva era de los plegables</div>
-            <div class="texto">Los celulares plegables han llegado para revolucionar nuestra experiencia móvil, ¡Prepárate para adentrarte en una dimensión tecnológica totalmente futurista! Con pantallas flexibles y diseños vanguardistas, estos dispositivos nos transportan hacia un futuro donde la portabilidad y la versatilidad se fusionan en un solo artefacto. Imagina tener un teléfono que se despliega para convertirse en una tableta, o que se pliega como un libro para caber en tu bolsillo. La era de los plegables ha llegado y con ella, un sinfín de posibilidades tecnológicas que desafían los límites de nuestra imaginación. ¡Prepárate para ser testigo de la magia de la innovación!
-            </div>
-            <div class="informacion">Publicado el 11/05/2023 por @ZestZoy</div>
-         </article>
-
-         <article>
-            <img class="art_img" src="imagenes/articulos/celulares/9.gif" alt="Logo del sitio">
-            <div class="titulo">Servicio técnico en casa</div>
-            <div class="texto">¿Sabías que puedes convertirte en el héroe de tus propios celulares? Te brindamos la oportunidad de aprender a reparar tus dispositivos con tus propias manos. Con guías detalladas y herramientas adecuadas, podrás solucionar problemas comunes como pantallas rotas, baterías agotadas y botones defectuosos. Ahora puedes evitar moverte y los costos de servicios. Además, adquirirás habilidades técnicas valiosas que podrás aplicar en el futuro. ¡No esperes más para tomar el control y convertirte en un maestro de la reparación de celulares en la comodidad de tu hogar!
-            </div>
-            <div class="informacion">Publicado el 10/05/2023 por @Franimal</div>
-         </article>
-
-         <article>
-            <img class="art_img" src="imagenes/articulos/celulares/9.gif" alt="Logo del sitio">
-            <div class="titulo">Servicio técnico en casa</div>
-            <div class="texto">¿Sabías que puedes convertirte en el héroe de tus propios celulares? Te brindamos la oportunidad de aprender a reparar tus dispositivos con tus propias manos. Con guías detalladas y herramientas adecuadas, podrás solucionar problemas comunes como pantallas rotas, baterías agotadas y botones defectuosos. Ahora puedes evitar moverte y los costos de servicios. Además, adquirirás habilidades técnicas valiosas que podrás aplicar en el futuro. ¡No esperes más para tomar el control y convertirte en un maestro de la reparación de celulares en la comodidad de tu hogar!
-            </div>
-            <div class="informacion">Publicado el 10/05/2023 por @Franimal</div>
-         </article>
-
-      </div>
-
-      <aside>
-         <div class="etiquetas"><span id="lateral_titulo">Etiquetas</span><br>
-            <ul>
-               <li>Samsung
-               <li>Apple
-               <li>Huawei
-               <li>Xiaomi
-               <li>Google
-               <li>Lenovo
-               <li>LG
-               <li>Motorola
-               <li>Nokia
-               <li>Sony
-               <li>Asus
-               <li>OnePlus
-               <li>Meizu
-               <li>Canon
-               <li>Nikon
-               <li>Panasonic
-               <li>Olympus
-               <li>Leica
-               <li>Zeiss
-               <li>GoPro
-               <li>DJI
-               <li>Lomography
-               <li>Polaroid
-            </ul>
-
-            <div class="ver_mas">Ver todas..</div>
-         </div>
-    
-         <div class="miembros"><span id="lateral_titulo">Staff</span>
-            <ul>
-               <li>
-                  <img class="miembro_imagen" src="imagenes/miembros/Bernard Fouquet.jpg" alt="miembro">
-                  <div class="miembro_datos">
-					      <span id="miembro_nombre">Bernard Fouquet</span><br
-					      ><span id="miembro_rol">Fundador</span>
-				      </div>
-               </li>
-               <li>
-                  <img class="miembro_imagen" src="imagenes/miembros/Taylor Knox.jpg" alt="miembro">
-                  <div class="miembro_datos">
-					      <span id="miembro_nombre">Taylor Knox</span><br
-					      ><span id="miembro_rol">Fundador</span>
-				      </div>
-               </li>
-               <li>
-                  <img class="miembro_imagen" src="imagenes/miembros/Sonja Kinski.jpg" alt="miembro">
-                  <div class="miembro_datos">
-					      <span id="miembro_nombre">Sonja Kinski</span><br
-					      ><span id="miembro_rol">Fundador</span>
-				      </div>
-               </li>
-               <li>
-                  <img class="miembro_imagen" src="imagenes/miembros/Sean Bennett.jpg" alt="miembro">
-                  <div class="miembro_datos">
-					      <span id="miembro_nombre">Sean Bennett</span><br
-					      ><span id="miembro_rol">Fundador</span>
-				      </div>
-               </li>
-               <li>
-                  <img class="miembro_imagen" src="imagenes/miembros/jim french.jpg" alt="miembro">
-                  <div class="miembro_datos">
-					      <span id="miembro_nombre">Jim French</span><br
-					      ><span id="miembro_rol">Redactor</span>
-				      </div>
-               </li>
-            </ul>
-            <div class="ver_mas">Ver todos..</div>
-         </div>
-      </aside>
-
+      <section id="articulos">
+         <span class="titular"><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin-top: 7px;max-height: 20px;margin-left: 20px"></span>
+      </section>
    </div>
 
-   <div id="pie">
-      <div id="interior">
-
-         <ul id="derecha">
-            <li><A href="https://web.whatsapp.com/" target="_blank"><img src="imagenes/marcas/wasap_w.png"></A></li>
-            <li><A href="blank" target="_blank"><img src="imagenes/otros/mensaje.png"></A></li>
-            <li><A href="mailto:lens4gear@team.com" target="_blank"><img src="imagenes/marcas/gmail_W.png"></A></li>
-         </ul>
-
-         <div id="izquierda">© 2023<img src="imagenes/lens4gear.png" alt="Titulo del sitio"
-            ><a href="../index.html" target="_blank" style="text-decoration:none"
-            >Sobre Nosotros</a>
-         </div>
-
-      </div>
-   </div>
+   <footer id="pie_chico"><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 25px;"></footer>
 
    <!-- código javascript  -->
+   <script src="../scripts/cargas.js"></script>
    <script>
-      // #region funciones que no se deben tocar
-      // Función para leer el contenido de una URL
-      async function leerContenido(URL) {
-         const response = await fetch(URL);
-         const contenido = await response.text();
-
-         return contenido;
-      }
-
-      // Función para devolver una variable con el contenido de un json.
-      async function leerJSON(URL) {
-         try {
-            return JSON.parse(await leerContenido(URL));
-         } catch (error) {
-            console.error('Error al leer el contenido:', URL, error);
-         }
-      }
-
-      // Función para insertar el contenido de una URL en un elemento HTML.
-      async function insertarContenido(URL, destino) {
-         try {
-            document.getElementById(destino).innerHTML = await leerContenido(URL);
-         } catch (error) {
-            console.error('Error al insertar el contenido:', URL, error);
-         }
-      }
-      // #endregion
-
-      // función que realiza la inserción de todos los html, de manera asíncrona.
+      // función que realiza la inserción de todos los elementos, de manera asíncrona.
       async function precedimientoAsincrono() {
-         // cargar JSON's
+         // cargar lista de elementos
          var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
+         var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
+         var articulos = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/articulos.json');
 
 
          // insertar HTML's externos
-         // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA LOS DEMÁS}
-         await insertarContenido(cabeceras.normal, "cabecera");
+         // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA EL FOOTER}
+         reemplazarContenido(cabeceras.chica, "cabecera_chica");
+         reemplazarContenido(pies.secundario, "pie_chico");
+
+
+         // Procedimientos para obtener la sección deseada de artículos e insertarlos
+         var parametros_de_busqueda = new URLSearchParams((new URL(window.location.href)).search);
+
+         // si no se accedió con parámetros de búsqueda, se muestran un error.
+         if (parametros_de_busqueda.size == 0 || !parametros_de_busqueda.get('seccion')) {
+            document.querySelector('section#articulos span.titular img.icono_de_carga').remove();
+            insertarContenidoCSSalPrincipio('Error: sección no especificada', 'section#articulos span.titular')
+
+            return;
+         }
+         // Obtener el tipo de sección de la búsqueda
+         var seccion = parametros_de_busqueda.get('seccion');
+
+         // Cambiar titular, para que contenga el tipo de sección
+         insertarContenidoCSSalPrincipio('Sección ' + seccion.replace(/^./, seccion[0].toUpperCase()), 'section#articulos span.titular')
+
+
+         // insertado de los artículos de manera dinámica
+         // definición de articulos a insetar (y ordenado según fecha)
+         var articulos = articulos[seccion].sort().reverse();
+         // insertado de los articulos
+         for (let index = 0; index < articulos.length; index++) {
+            await insertarContenidoCSS(articulos[index], 'section#articulos');
+         }
+
+         document.querySelector('section#articulos span.titular img.icono_de_carga').remove();
       }
 
-      // llamada al procedimiento asíncrono.
-      precedimientoAsincrono();
+
+      // Cosas que se hacen MIENTRAS el documento carga..
+      document.addEventListener('DOMContentLoaded', function() {
+         precedimientoAsincrono();
+      });
    </script>
    <!-- código javascript  -->
 </body>

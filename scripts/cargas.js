@@ -36,8 +36,20 @@ async function insertarContenido(URL, destino) {
 
 // Lo mismo que arriba pero con el selector CSS.
 async function insertarContenidoCSS(URL, destino) {
+    await __insertarContenidoCSS(URL, destino, "beforeend");
+}
+
+async function __insertarContenidoCSS(URL, destino, locacion) {
     try {
-        document.querySelector(destino).insertAdjacentHTML('beforeend', await leerContenido(URL));
+        document.querySelector(destino).insertAdjacentHTML(locacion, await leerContenido(URL));
+    } catch (error) {
+        console.error('Error al insertar el contenido:', URL, error);
+    }
+}
+
+function insertarContenidoCSSalPrincipio(contenido, destino) {
+    try {
+        document.querySelector(destino).insertAdjacentHTML("afterbegin", contenido);
     } catch (error) {
         console.error('Error al insertar el contenido:', URL, error);
     }
