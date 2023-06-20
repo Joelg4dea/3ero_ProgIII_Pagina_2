@@ -1,8 +1,43 @@
 {
-  "archivosHTML": [
-	"accesorios_JOHN.html",
-	"camaras_JOHN.html",
-	"celulares_JOHN.html",
-	"lentes_JOHN.html"
+  "celulares": [
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_05_11_26044_ShanelleHamp.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_05_10_43199_ShanelleHamp.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_04_25_10233_JenyZ.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_04_17_30105_VinFRenzuela.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_04_14_23457_BellFQT.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_02_10_36481_SeannnL.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_01_07_41099_JenyZ.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_01_01_33569_TayNerzi.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_01_01_60960_SeannnL.html"
+  ],
+  "camaras": [
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_05_14_36044_VinFRenzuela.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_03_25_35112_VinFRenzuela.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_02_24_73501_RochTes.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_02_11_76426_TayNerzi.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_20_62408_Frenchie.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_02_20982_TayNerzi.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_02_11628_ShanelleHamp.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_01_47161_Zonya.html"
+  ],
+  "accesorios": [
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_05_8_35955_Knoxis.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_04_13_80515_TayNerzi.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_04_05_54342_SeannnL.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_03_05_62392_DarchRice.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_02_25_48386_VinFRenzuela.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_01_23_48240_SeannnL.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_01_13_74576_CoChad.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_01_09_99277_BellFQT.html"
+  ],
+  "lentes": [
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_05_5_61286_ShanelleHamp.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_04_01_42823_VinFRenzuela.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_02_17_49471_SeannnL.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_02_11_74382_SeannnL.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_02_09_87648_JellyKing.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_01_22_92864_RochTes.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_01_04_86754_Frenchie.html",
+    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_01_03_64834_VinFRenzuela.html"
   ]
 }
