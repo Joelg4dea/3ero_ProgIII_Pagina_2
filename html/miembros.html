@@ -9,8 +9,9 @@
    <TITLE>Mi primer documento HTML</TITLE>
 </head>
 
-<body id="body_alternativo">
+<body id="body_miembros">
    <!-- los HTML se insertan dinamicamente mediante javascript. Ver carpeta JSON para saber la localizacion de los HTML y <Scripts> para la inserción  -->
+   <!-- #region BODY  -->
    <header id="cabecera_chica"><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 10px;"></header> 
 
    <div id="cuerpo">
@@ -27,33 +28,36 @@
    </div>
 
    <footer id="pie_chico"><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 25px;"></footer>
+   <!-- #endregion BODY  -->
 
-   <!-- código javascript  -->
+   <!-- #region código javascript  -->
    <script src="../scripts/cargas.js"></script>
    <script>
       // función que realiza la inserción de todos los elementos, de manera asíncrona.
       async function precedimientoAsincrono() {
-         // cargar lista de elementos
+         // #region cargar lista de elementos
          var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
          var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
          var miembros = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/miembros.json');
+         // #endregion
 
 
-         // insertar HTML's externos
+         // #region insertar HTML's externos
          // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA EL FOOTER}
          reemplazarContenido(cabeceras.chica, "cabecera_chica");
          reemplazarContenido(pies.secundario, "pie_chico");
+         // #endregion
 
 
-         // insertar lista de miembros de manera dinámica
-         // eliminar el ícono de carga
-
+         // #region insertar lista de miembros de manera dinámica
          // cargar todos los miembros desde la lista de miembros
          for (const miembro of miembros.normales) {
             await insertarContenidoCSS(miembro, 'section#presentacion ul#pres_elementos');
          }
 
-         document.querySelector('section#presentacion span.titular img.icono_de_carga').remove();
+         // eliminar el ícono de carga
+         eliminarSegunCSS('section#presentacion span.titular img.icono_de_carga');
+         // #endregion
       }
 
       // Cosas que se hacen MIENTRAS el documento carga..
@@ -61,7 +65,7 @@
          precedimientoAsincrono();
       });
    </script>
-   <!-- código javascript  -->
+   <!-- #endregion código javascript  -->
 </body>
 
 </html>

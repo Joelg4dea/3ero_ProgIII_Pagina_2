@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="../estilos.css">
+   <TITLE>Mi primer documento HTML</TITLE>
+</head>
+
+<body id="body_etiquetas">
+   <!-- los HTML se insertan dinamicamente mediante javascript. Ver carpeta JSON para saber la localizacion de los HTML y <Scripts> para la inserción  -->
+   <!-- #region BODY  -->
+   <header id="cabecera_chica"><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 10px;"></header> 
+
+   <div id="cuerpo">
+
+      <section id="presentacion">
+         <span class="titular">Listado de Etiquetas<img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin-top: 7px;max-height: 30px;float: right;"></span>
+         <div class="mensaje_anclado">Click sobre las etiquetas para buscar artículos relacionados</div>
+         <ul id="pres_elementos">
+         </ul>
+      </section>
+
+   </div>
+
+   <footer id="pie_chico"><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 25px;"></footer>
+   <!-- #endregion BODY  -->
+
+   <!-- #region código javascript  -->
+   <script src="../scripts/cargas.js"></script>
+   <script>
+      // #region Declaración de variables globales
+      // Variables globales que contendrán las etiquetas
+      var etiquetas = new Array();
+
+      // Variables globales que contienen los html para CARGAR MÁS y el ICONO DE CARGA
+      const elemento_ver_mas = '<div id="elemento_ver_mas">Cargar más</div>';
+      const icono_de_carga = '<img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin: 10px auto 30px;max-height: 70px;display: block">';
+      // #endregion
+
+      // función que realiza la inserción de las etiquetas, de manera asíncrona.
+      async function insertarMasEtiquetas() {
+         // insertado de las etiquetas de la lista de etiquetas (solo 36)
+         for (let index = 0; index < 4; index++) {
+            await insertarContenidoCSS(etiquetas[index], 'div#cuerpo section#presentacion ul#pres_elementos');
+
+            // después de insertar la primer etiqueta, se quita el ícono de carga
+            if (index == 0) {
+               eliminarSegunCSS('div#cuerpo section#presentacion span.titular img.icono_de_carga, div#cuerpo section#presentacion img.icono_de_carga');
+            }
+         }
+
+         // eliminación de las primeras 4*12 etiquetas de la lista (para no insertarlas de vuelta)
+         etiquetas = etiquetas.slice(4);
+
+         // si todavía quedan etiquetas sin insertar, se inserta el botón "cargar más"
+         if (etiquetas.length) {
+            // insertado del botón
+            await insertarStringCSS(elemento_ver_mas, 'div#cuerpo section#presentacion');
+
+            // función que se ejecutara al hacer click en el botón.
+            (document.getElementById('elemento_ver_mas')).addEventListener('click', function () {
+               // La función quitará el botón "cargar más", mostrara el 'cargando' e insertará las etiquetas nuevamente.
+               insertarStringCSS(icono_de_carga, 'div#cuerpo section#presentacion');
+               eliminarSegunID('elemento_ver_mas');
+               insertarMasEtiquetas();
+            });
+         }
+      }
+
+
+      // función que realiza la inserción de todos los elementos, de manera asíncrona.
+      async function precedimientoAsincrono() {
+         // #region cargar lista de elementos
+         var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
+         var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
+         etiquetas = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/etiquetas.json');
+         // #endregion
+
+
+         // #region insertar HTML's externos
+         // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA EL FOOTER}
+         reemplazarContenido(cabeceras.chica, "cabecera_chica");
+         reemplazarContenido(pies.secundario, "pie_chico");
+         // #endregion
+
+
+         // #region insertar etiquetas de manera dinámica
+         insertarMasEtiquetas();
+         // #endregion
+      }
+
+      // Cosas que se hacen MIENTRAS el documento carga..
+      document.addEventListener('DOMContentLoaded', function() {
+         precedimientoAsincrono();
+      });
+   </script>
+   <!-- #endregion código javascript  -->
+</body>
+
+</html>
