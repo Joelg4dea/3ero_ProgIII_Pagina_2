@@ -1,37 +1,146 @@
 [
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_0_11.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_12_23.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_24_35.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_36_47.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_48_59.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_60_71.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_72_83.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_84_95.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_96_107.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_108_119.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_120_131.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_132_143.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_144_155.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_156_167.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_168_179.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_180_191.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_192_203.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_204_215.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_216_227.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_228_239.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_240_251.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_252_263.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_264_275.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_276_287.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_288_299.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_300_311.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_312_323.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_324_335.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_336_347.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_348_359.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_360_371.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_372_383.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_384_395.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_396_407.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_408_419.html"
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_0_11.html",
+        "etiquetas": [ "fotografía", "arte", "momentos", "inolvidables", "creatividad", "cámara", "opciones", "funciones", "ISO", "apertura", "velocidad", "obturación" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_12_23.html",
+        "etiquetas": [ "composición", "iluminación", "perspectiva", "impactantes", "experimenta", "descubre", "herramienta", "visión", "celulares", "plegables", "revolucionar", "experiencia" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_24_35.html",
+        "etiquetas": [ "móvil", "dimensión", "tecnológica", "futurista", "pantallas", "flexibles", "diseños", "vanguardistas", "portabilidad", "versatilidad", "artefacto", "magia" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_36_47.html",
+        "etiquetas": [ "innovación", "héroe", "aprender", "reparar", "dispositivos", "manos", "guías", "detalladas", "herramientas", "solucionar", "problemas", "rotas" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_48_59.html",
+        "etiquetas": [ "baterías", "agotadas", "botones", "defectuosos", "moverte", "costos", "servicios", "habilidades", "técnicas", "valiosas", "control", "maestro" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_60_71.html",
+        "etiquetas": [ "reparación", "comodidad", "hogar", "drones", "conquistado", "cielos", "aplicaciones", "fascinantes", "límites", "legales", "utilizarlos", "responsable" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_72_83.html",
+        "etiquetas": [ "países", "regulaciones", "registro", "restricciones", "vuelo", "áreas", "aeropuertos", "zonas", "residenciales", "privacidad", "invadir", "espacio" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_84_95.html",
+        "etiquetas": [ "licencias", "especiales", "usos", "comerciales", "recreativos", "informarse", "normativas", "locales", "segura", "legal", "infinitas", "posibilidades" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_96_107.html",
+        "etiquetas": [ "capturar", "elección", "lente", "adecuado", "marcar", "diferencia", "tipos", "aperturas", "entender", "características", "fundamental", "decisión" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_108_119.html",
+        "etiquetas": [ "correcta", "amplia", "baja", "luz", "ideal", "efectos", "desenfoque", "artístico", "estrecha", "alta", "nitidez", "profundidad" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_120_131.html",
+        "etiquetas": [ "campo", "necesidades", "estilo", "espectaculares", "Google", "Pixel", "teléfono", "inteligente", "calidad", "excelente", "precio", "razonable" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_132_143.html",
+        "etiquetas": [ "dólares", "trasera", "frontal", "MP", "imágenes", "nítidas", "capacidad", "grabar", "videos", "4K", "fotogramas", "segundo" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_144_155.html",
+        "etiquetas": [ "formato", "RAW", "pantalla", "OLED", "píxeles", "vibrantes", "general", "iPhone", "Pro", "premium", "imagen", "excepcional" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_156_167.html",
+        "etiquetas": [ "triple", "colores", "Super", "Retina", "XDR", "pulgadas", "resolución", "mejora", "OnePlus", "T", "principal", "48" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_168_179.html",
+        "etiquetas": [ "detalles", "impresionantes", "condiciones", "ultra", "gran", "angular", "amplía", "toma", "grabación", "video", "estabilización", "óptica" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_180_191.html",
+        "etiquetas": [ "fluida", "nítida", "asequible", "estabilizador", "profesional", "Steadycam", "accesorio", "tomas", "suaves", "estables", "peso", "ligero" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_192_203.html",
+        "etiquetas": [ "compatible", "cámaras", "carga", "batería", "horas", "fluidos", "Vgo", "Trípode", "Cámara/Celulares", "1,40", "Mts", "Tm-5245" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_204_215.html",
+        "etiquetas": [ "versátil", "económico", "altura", "metros", "kilogramos", "rótula", "vías", "ajustar", "ángulo", "transportar", "funcional", "Canon" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_216_227.html",
+        "etiquetas": [ "Ef-s", "35mm", "F/2.8", "Macro", "fotógrafos", "distancias", "ampliar", "enfocar", "sorprendentes", "kilómetros", "paisajes", "fauna" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_228_239.html",
+        "etiquetas": [ "silvestre", "complemento", "fotógrafo", "aventurero", "perspectivas", "únicas", "digital", "Sony", "Mirrorless", "APS-C", "ILCE-6400", "A6400" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_240_251.html",
+        "etiquetas": [ "fotografías", "naturaleza", "espacios verdes", "esplendor", "soporte", "GoPro", "Montaje Lateral", "Casco", "Moto", "única", "instalación", "adaptabilidad" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_252_263.html",
+        "etiquetas": [ "libertad", "fotos", "durabilidad", "peso ligero", "viaje en moto", "cargador portátil", "Anker", "Powercore", "26800 mAh", "dispositivos móviles", "carga rápida", "diseño compacto" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_264_275.html",
+        "etiquetas": [ "transporte", "carga de emergencia", "cámara instantánea", "Onestep", "Polaroid", "fiestas", "poca luz", "almacenamiento", "duración de batería", "conexión", "redes sociales", "Yongnuo" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_276_287.html",
+        "etiquetas": [ "50mm", "Yn50mm F1.8", "Nikon", "apertura máxima", "imágenes claras", "retratos", "viajar", "DSC-WX350", "playa", "resistente al agua", "resistente a la arena", "protección UV" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_288_299.html",
+        "etiquetas": [ "balance de blancos", "protección contra el viento", "Ef 1.969", "F / 1,8 Stm", "filtro UV", "vidrio", "detalles impresionantes", "enfoque", "Xperia 1 III", "triple cámara trasera", "12 MP", "tecnología ZEISS" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_300_311.html",
+        "etiquetas": [ "foto", "4K HDR", "120 fps", "ráfaga", "alta gama", "teléfono inteligente", "cámara de celular", "20x", "Samsung", "ampliación de imagen", "largas distancias", "carcasa sumergible" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_312_323.html",
+        "etiquetas": [ "Hero 7 White Silver", "mundo submarino", "resistencia", "40 metros", "protección", "lentes de alta calidad", "JK Imaging", "Kodak Pixpro Smart Lens SL10", "compacto", "fácil de usar", "dispositivo móvil", "momentos especiales" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_324_335.html",
+        "etiquetas": [ "mal parado", "tecnología avanzada", "exposición", "velocidad de obturación", "remota oscuridad", "DSC-HX400/HX400V", "compacta", "todas partes", "batería de larga duración", "sin espejo", "16 megapíxeles", "rango dinámico" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_336_347.html",
+        "etiquetas": [ "claridad", "detalles increíbles", "tarjeta de memoria", "Sandisk", "32GB", "clase 10", "velocidad de lectura", "almacenar", "grandes cantidades", "capacidad de almacenamiento", "alta velocidad de lectura", "rápida transferencia de archivos" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_348_359.html",
+        "etiquetas": [ "DJI Mini SE", "dron", "manejable", "cámara de alta calidad", "estabilización en ejes", "imágenes aéreas impresionantes", "Estados Unidos", "Xiaomi Mi 11", "cámara trasera principal", "108MP", "tasa de refresco", "8K" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_360_371.html",
+        "etiquetas": [ "30 fotogramas por segundo", "calidad cinematográfica", "precio razonable", "Zoom Teleobjetivo", "70-300mm", "F4.5-5.6", "Serie G Full Frame", "tomas dramáticas", "rango de zoom", "detalles únicos", "perspectiva única", "lente fijo" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_372_383.html",
+        "etiquetas": [ "F2.8", "Serie Zeiss Full Frame", "situaciones sigilosas", "ambiente", "distancia focal", "detalles precisos", "calidad de imagen", "enfoque silencioso", "EOS R5 C", "espacios abiertos", "lente gran angular", "resolución de imagen" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_384_395.html",
+        "etiquetas": [ "resistente", "duradera", "estabilización de imagen", "cámara digital", "Nikon COOLPIX", "campo de visión", "lente especializada", "elementos", "interiores", "tomas de grupo", "Samsung Galaxy S21 Ultra", "cámara principal" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_396_407.html",
+        "etiquetas": [ "teleobjetivo", "10x", "ultra gran angular", "12MP", "grabar video", "60fps", "creadores de contenido", "capacidades de grabación", "cámara reflex", "Nikon FM2", "alto contraste", "luz brillante" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_408_419.html",
+        "etiquetas": [ "sombras profundas", "resistente al polvo", "construcción resistente", "OnePlus 9 Pro", "impresionante", "precio atractivo", "48 MP", "cámara ultra gran angular", "50 MP", "imágenes nítidas", "colores vibrantes", "grabación de video" ]
+    },
+    {
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/etiquetas/etiquetas_420_431.html",
+        "etiquetas": [ "resolución de pantalla", "QHD+", "experiencia visual" ]
+    }
 ]
