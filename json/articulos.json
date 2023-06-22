@@ -1,43 +1,274 @@
 {
   "celulares": [
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_05_11_30766_RochTes.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_05_10_97091_BellFQT.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_04_25_25216_Frenchie.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_04_17_40175_TayNerzi.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_04_14_43577_Zonya.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_02_10_65109_ShanelleHamp.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_01_07_84892_Knoxis.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_01_01_53017_Frenchie.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_01_01_46338_BellFQT.html"
+    {
+        "identificador": 84809,
+        "titulo": "La nueva era de los plegables",
+        "fecha": "2023_05_11",
+        "etiquetas": [ "celulares", "plegables", "revolucionar", "experiencia", "móvil", "dimensión", "tecnológica", "futurista", "pantallas", "flexibles", "diseños", "vanguardistas", "portabilidad", "versatilidad", "artefacto", "magia", "innovación" ],
+        "miembro": "Knoxis",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_05_11_84809_Knoxis.html"
+    },
+    {
+        "identificador": 43388,
+        "titulo": "Servicio técnico en casa",
+        "fecha": "2023_05_10",
+        "etiquetas": [ "héroe", "aprender", "reparar", "dispositivos", "manos", "guías", "detalladas", "herramientas", "solucionar", "problemas", "pantallas", "rotas", "baterías", "agotadas", "botones", "defectuosos", "moverte", "costos", "servicios", "habilidades", "técnicas", "valiosas", "control", "maestro", "reparación", "celulares", "comodidad", "hogar" ],
+        "miembro": "JenyZ",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_05_10_43388_JenyZ.html"
+    },
+    {
+        "identificador": 10384,
+        "titulo": "Imagen excepcional, rendimiento confiable",
+        "fecha": "2023_04_25",
+        "etiquetas": [ "Google", "Pixel", "teléfono", "inteligente", "alta", "calidad", "excelente", "cámara", "precio", "razonable", "dólares", "trasera", "frontal", "MP", "imágenes", "nítidas", "detalladas", "capacidad", "grabar", "videos", "4K", "fotogramas", "segundo", "formato", "RAW", "pantalla", "OLED", "píxeles", "vibrantes", "general" ],
+        "miembro": "TayNerzi",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_04_25_10384_TayNerzi.html"
+    },
+    {
+        "identificador": 40103,
+        "titulo": "Un teléfono de alto rendimiento",
+        "fecha": "2023_04_17",
+        "etiquetas": [ "iPhone", "Pro", "premium", "calidad", "imagen", "excepcional", "cámara", "triple", "lente", "MP", "colores", "vibrantes", "videos", "fotogramas", "Super", "Retina", "XDR", "pulgadas", "resolución", "píxeles", "mejora", "calidad", "general" ],
+        "miembro": "SeannnL",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_04_17_40103_SeannnL.html"
+    },
+    {
+        "identificador": 56324,
+        "titulo": "Alta calidad a un precio bajo",
+        "fecha": "2023_04_14",
+        "etiquetas": [ "OnePlus", "T", "principal", "48", "detalles", "impresionantes", "condiciones", "iluminación", "lente", "ultra", "gran", "angular", "amplía", "campo", "visión", "capturar", "toma", "grabación", "video", "estabilización", "óptica", "imagen", "fluida", "nítida", "precio", "asequible" ],
+        "miembro": "JenyZ",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_04_14_56324_JenyZ.html"
+    },
+    {
+        "identificador": 68538,
+        "titulo": "Salió de la fábrica de tankes",
+        "fecha": "2023_02_10",
+        "etiquetas": [ "precio", "Sony", "Xperia 1 III", "triple cámara trasera", "12 MP", "tecnología ZEISS", "detalles impresionantes", "foto", "video", "grabación", "4K HDR", "120 fps", "ráfaga", "alta gama", "teléfono inteligente" ],
+        "miembro": "JellyKing",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_02_10_68538_JellyKing.html"
+    },
+    {
+        "identificador": 24253,
+        "titulo": "El Rey de la Calidad-Precio",
+        "fecha": "2023_01_07",
+        "etiquetas": [ "Xiaomi Mi 11", "teléfono", "cámara trasera principal", "108MP", "detalles", "resolución", "tasa de refresco", "8K", "30 fotogramas por segundo", "calidad cinematográfica", "precio razonable" ],
+        "miembro": "RochTes",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_01_07_24253_RochTes.html"
+    },
+    {
+        "identificador": 74666,
+        "titulo": "Ideal para influencers",
+        "fecha": "2023_01_01",
+        "etiquetas": [ "Samsung Galaxy S21 Ultra", "teléfono", "cámara principal", "108MP", "teleobjetivo", "10x", "ultra gran angular", "12MP", "detalles impresionantes", "grabar video", "8K", "4K", "60fps", "creadores de contenido", "calidad de imagen", "capacidades de grabación" ],
+        "miembro": "JenyZ",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_01_01_74666_JenyZ.html"
+    },
+    {
+        "identificador": 51268,
+        "titulo": "Fotografías de alta gama",
+        "fecha": "2023_01_01",
+        "etiquetas": [ "OnePlus 9 Pro", "teléfono", "impresionante", "precio atractivo", "cámara principal", "48 MP", "cámara ultra gran angular", "50 MP", "imágenes nítidas", "colores vibrantes", "grabación de video", "8K", "4K", "120 fps", "resolución de pantalla", "QHD+", "experiencia visual", "batería de larga duración", "carga rápida" ],
+        "miembro": "Knoxis",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/celulares/2023_01_01_51268_Knoxis.html"
+    }
   ],
   "camaras": [
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_05_14_87551_BellFQT.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_03_25_98615_Zonya.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_02_24_97648_RochTes.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_02_11_47921_BellFQT.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_20_23227_Aloxander.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_02_86304_CoChad.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_02_53380_Aloxander.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_01_24979_JellyKing.html"
+    {
+        "identificador": 73744,
+        "titulo": "¿Cómo tomar una buena foto?",
+        "fecha": "2023_05_14",
+        "etiquetas": [ "fotografía", "arte", "momentos", "inolvidables", "creatividad", "cámara", "opciones", "funciones", "ISO", "apertura", "velocidad", "obturación", "composición", "iluminación", "perspectiva", "impactantes", "experimenta", "descubre", "herramienta", "visión" ],
+        "miembro": "JellyKing",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_05_14_73744_JellyKing.html"
+    },
+    {
+        "identificador": 23865,
+        "titulo": "La cámara para acampar",
+        "fecha": "2023_03_25",
+        "etiquetas": [ "cámara", "digital", "Sony", "Mirrorless", "APS-C", "ILCE-6400", "A6400", "fotografías", "naturaleza", "espacios verdes", "esplendor" ],
+        "miembro": "Aloxander",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_03_25_23865_Aloxander.html"
+    },
+    {
+        "identificador": 68156,
+        "titulo": "¡Ideal para las fiestas!",
+        "fecha": "2023_02_24",
+        "etiquetas": [ "cámara instantánea", "Onestep", "Polaroid", "fiestas", "poca luz", "almacenamiento", "duración de batería", "conexión", "teléfono", "redes sociales" ],
+        "miembro": "VinFRenzuela",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_02_24_68156_VinFRenzuela.html"
+    },
+    {
+        "identificador": 29504,
+        "titulo": "La playa es tu amiga",
+        "fecha": "2023_02_11",
+        "etiquetas": [ "cámara", "DSC-WX350", "Sony", "playa", "resistente al agua", "resistente a la arena", "protección UV", "balance de blancos", "protección contra el viento" ],
+        "miembro": "TayNerzi",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_02_11_29504_TayNerzi.html"
+    },
+    {
+        "identificador": 75549,
+        "titulo": "¡Perfecta para viajar!",
+        "fecha": "2023_01_20",
+        "etiquetas": [ "cámara", "DSC-HX400/HX400V", "Sony", "viajar", "compacta", "transportar", "todas partes", "batería de larga duración", "sin espejo", "16 megapíxeles", "rango dinámico", "claridad", "detalles increíbles" ],
+        "miembro": "BellFQT",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_20_75549_BellFQT.html"
+    },
+    {
+        "identificador": 33830,
+        "titulo": "Para ir al descubierto",
+        "fecha": "2023_01_02",
+        "etiquetas": [ "cámara", "EOS R5 C", "Canon", "espacios abiertos", "lente gran angular", "resolución de imagen", "duración de batería", "capacidad de almacenamiento", "resistente", "duradera", "estabilización de imagen" ],
+        "miembro": "BellFQT",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_02_33830_BellFQT.html"
+    },
+    {
+        "identificador": 18965,
+        "titulo": "La más angular",
+        "fecha": "2023_01_02",
+        "etiquetas": [ "cámara digital", "Nikon COOLPIX", "campo de visión", "lente especializada", "elementos", "paisajes", "interiores", "tomas de grupo" ],
+        "miembro": "SeannnL",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_02_18965_SeannnL.html"
+    },
+    {
+        "identificador": 13809,
+        "titulo": "¿Desierto? Hagas lo que hagas, no te quites los zapatos",
+        "fecha": "2023_01_01",
+        "etiquetas": [ "cámara reflex", "Nikon FM2", "detalles", "alto contraste", "luz brillante", "sombras profundas", "resistente al polvo", "resistente a la arena", "calidad de imagen", "construcción resistente" ],
+        "miembro": "CoChad",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/camaras/2023_01_01_13809_CoChad.html"
+    }
   ],
   "accesorios": [
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_05_08_61780_Knoxis.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_04_13_44747_Aloxander.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_04_05_11022_Zonya.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_03_05_29637_RochTes.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_02_25_38480_Knoxis.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_01_23_13519_RochTes.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_01_13_83795_SeannnL.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_01_09_67337_RochTes.html"
+    {
+        "identificador": 12503,
+        "titulo": "¿Cuáles son los límites legales?",
+        "fecha": "2023_05_08",
+        "etiquetas": [ "drones", "conquistado", "cielos", "aplicaciones", "fascinantes", "límites", "legales", "utilizarlos", "responsable", "países", "regulaciones", "registro", "restricciones", "vuelo", "áreas", "aeropuertos", "zonas", "residenciales", "privacidad", "invadir", "espacio", "licencias", "especiales", "usos", "comerciales", "recreativos", "informarse", "normativas", "locales", "segura", "legal", "infinitas", "posibilidades" ],
+        "miembro": "Frenchie",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_05_08_12503_Frenchie.html"
+    },
+    {
+        "identificador": 71665,
+        "titulo": "¡Para moverte y capturar!",
+        "fecha": "2023_04_13",
+        "etiquetas": [ "estabilizador", "cámara", "profesional", "Steadycam", "accesorio", "tomas", "suaves", "estables", "peso", "ligero", "compatible", "cámaras", "celulares", "capacidad", "carga", "batería", "horas", "fluidos", "estables" ],
+        "miembro": "DarchRice",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_04_13_71665_DarchRice.html"
+    },
+    {
+        "identificador": 63144,
+        "titulo": "Un trípode económico",
+        "fecha": "2023_04_05",
+        "etiquetas": [ "Vgo", "Trípode", "Cámara/Celulares", "1,40", "Mts", "Tm-5245", "versátil", "económico", "altura", "metros", "peso", "carga", "kilogramos", "compatible", "rótula", "vías", "ajustar", "ángulo", "peso", "kilogramos", "transportar", "económico", "funcional" ],
+        "miembro": "RochTes",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_04_05_63144_RochTes.html"
+    },
+    {
+        "identificador": 34876,
+        "titulo": "Odio que sea tan bueno",
+        "fecha": "2023_03_05",
+        "etiquetas": [ "soporte", "GoPro", "Montaje Lateral", "Casco", "Moto", "accesorio", "grabación", "única", "instalación", "adaptabilidad", "libertad", "videos", "fotos", "durabilidad", "peso ligero", "viaje en moto" ],
+        "miembro": "JellyKing",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_03_05_34876_JellyKing.html"
+    },
+    {
+        "identificador": 73512,
+        "titulo": "¡Pesado, pero muy útil!",
+        "fecha": "2023_02_25",
+        "etiquetas": [ "cargador portátil", "Anker", "Powercore", "26800 mAh", "dispositivos móviles", "cámaras", "carga rápida", "segura", "diseño compacto", "transporte", "carga de emergencia" ],
+        "miembro": "Aloxander",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_02_25_73512_Aloxander.html"
+    },
+    {
+        "identificador": 40327,
+        "titulo": "Captura la belleza del mar",
+        "fecha": "2023_01_23",
+        "etiquetas": [ "carcasa sumergible", "GoPro", "Hero 7 White Silver", "mundo submarino", "resistencia", "40 metros", "protección", "lentes de alta calidad" ],
+        "miembro": "TayNerzi",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_01_23_40327_TayNerzi.html"
+    },
+    {
+        "identificador": 78682,
+        "titulo": "Más fotos por muy poco",
+        "fecha": "2023_01_13",
+        "etiquetas": [ "tarjeta de memoria", "Sandisk", "32GB", "clase 10", "velocidad de lectura", "almacenar", "grandes cantidades", "fotos", "videos", "capacidad de almacenamiento", "alta velocidad de lectura", "rápida transferencia de archivos" ],
+        "miembro": "Frenchie",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_01_13_78682_Frenchie.html"
+    },
+    {
+        "identificador": 29198,
+        "titulo": "¡Tomas fantásticas!",
+        "fecha": "2023_01_09",
+        "etiquetas": [ "DJI Mini SE", "dron", "compacto", "transportar", "manejable", "cámara de alta calidad", "estabilización en ejes", "imágenes aéreas impresionantes", "duración de batería", "peso ligero", "registro", "Estados Unidos" ],
+        "miembro": "Knoxis",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/accesorios/2023_01_09_29198_Knoxis.html"
+    }
   ],
   "lentes": [
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_05_05_17321_ShanelleHamp.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_04_01_15689_CoChad.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_02_17_42963_JenyZ.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_02_11_80866_RochTes.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_02_09_90545_JenyZ.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_01_22_52669_JellyKing.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_01_04_86329_VinFRenzuela.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_01_03_84847_VinFRenzuela.html"
+    {
+        "identificador": 38517,
+        "titulo": "¿Cómo elegir un buen lente?",
+        "fecha": "2023_05_05",
+        "etiquetas": [ "capturar", "momentos", "inolvidables", "elección", "lente", "adecuado", "marcar", "diferencia", "tipos", "aperturas", "entender", "características", "fundamental", "decisión", "correcta", "amplia", "baja", "capturar", "luz", "ideal", "fotografía", "iluminación", "efectos", "desenfoque", "artístico", "estrecha", "alta", "nitidez", "profundidad", "campo", "necesidades", "estilo", "espectaculares" ],
+        "miembro": "DarchRice",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_05_05_38517_DarchRice.html"
+    },
+    {
+        "identificador": 19983,
+        "titulo": "Ojo de águila de bolsillo",
+        "fecha": "2023_04_01",
+        "etiquetas": [ "Canon", "Ef-s", "35mm", "F/2.8", "Macro", "ideal", "fotógrafos", "imágenes", "distancias", "calidad", "imagen", "capacidad", "ampliar", "perspectiva", "enfocar", "detalles", "sorprendentes", "kilómetros", "paisajes", "fauna", "silvestre", "complemento", "fotógrafo", "aventurero", "perspectivas", "únicas" ],
+        "miembro": "Aloxander",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_04_01_19983_Aloxander.html"
+    },
+    {
+        "identificador": 39647,
+        "titulo": "Captura el mundo con detalles precisos",
+        "fecha": "2023_02_17",
+        "etiquetas": [ "lente", "Yongnuo", "50mm", "Yn50mm F1.8", "Canon", "Nikon", "apertura máxima", "luz", "imágenes claras", "nítidas", "retratos", "paisajes", "viajar" ],
+        "miembro": "DarchRice",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_02_17_39647_DarchRice.html"
+    },
+    {
+        "identificador": 50730,
+        "titulo": "Lentes capaces de revelar belleza oculta",
+        "fecha": "2023_02_11",
+        "etiquetas": [ "lente", "Canon", "Ef 1.969", "F / 1,8 Stm", "filtro UV", "vidrio", "detalles impresionantes", "poca luz", "enfoque", "nitidez" ],
+        "miembro": "JenyZ",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_02_11_50730_JenyZ.html"
+    },
+    {
+        "identificador": 48886,
+        "titulo": "Transforma tu visión en fotografía",
+        "fecha": "2023_02_09",
+        "etiquetas": [ "lente", "cámara de celular", "20x", "Samsung", "iPhone", "ampliación de imagen", "largas distancias" ],
+        "miembro": "JellyKing",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_02_09_48886_JellyKing.html"
+    },
+    {
+        "identificador": 80279,
+        "titulo": "Apaga esas luces",
+        "fecha": "2023_01_22",
+        "etiquetas": [ "lente", "JK Imaging", "Kodak Pixpro Smart Lens SL10", "compacto", "fácil de usar", "dispositivo móvil", "momentos especiales", "mal parado", "tecnología avanzada", "exposición", "enfoque", "velocidad de obturación", "nítidas", "vibrantes", "remota oscuridad" ],
+        "miembro": "JenyZ",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_01_22_80279_JenyZ.html"
+    },
+    {
+        "identificador": 22232,
+        "titulo": "Zoom para acercamientos dramáticos",
+        "fecha": "2023_01_04",
+        "etiquetas": [ "lente", "Zoom Teleobjetivo", "70-300mm", "F4.5-5.6", "Serie G Full Frame", "tomas dramáticas", "rango de zoom", "detalles únicos", "retratos", "paisajes", "perspectiva única" ],
+        "miembro": "ShanelleHamp",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_01_04_22232_ShanelleHamp.html"
+    },
+    {
+        "identificador": 53819,
+        "titulo": "Enfoque silencioso para situaciones sensibles",
+        "fecha": "2023_01_03",
+        "etiquetas": [ "lente fijo", "35mm", "F2.8", "Serie Zeiss Full Frame", "situaciones sigilosas", "enfoque", "ambiente", "distancia focal", "apertura", "detalles precisos", "calidad de imagen", "enfoque silencioso" ],
+        "miembro": "Aloxander",
+        "URL": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/articulos/lentes/2023_01_03_53819_Aloxander.html"
+    }
   ]
 }
