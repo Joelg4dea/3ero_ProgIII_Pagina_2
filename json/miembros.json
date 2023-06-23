@@ -1,50 +1,142 @@
-{
-  "chiquitos": [
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Bernard_Fouquet.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Sean_Bennett.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Sonja_Kinski.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Taylor_Knox.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Darnell_Rice.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Jesy_Mckinney.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Shanola_Hampton.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Taymour_Ghazi.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Jim_French.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Chad_Coleman.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Earl_Alexander.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Jen_Taylor.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Rochelle_Aytes.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Vince_Valenzuela.html"
-  ],
-  "normales": [
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Bernard_Fouquet.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Sean_Bennett.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Sonja_Kinski.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Taylor_Knox.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Darnell_Rice.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Jesy_Mckinney.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Shanola_Hampton.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Taymour_Ghazi.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Jim_French.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Chad_Coleman.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Earl_Alexander.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Jen_Taylor.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Rochelle_Aytes.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Vince_Valenzuela.html"
-  ],
-  "gigantes": [
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Bernard_Fouquet.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Sean_Bennett.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Sonja_Kinski.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Taylor_Knox.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Darnell_Rice.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Jesy_Mckinney.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Shanola_Hampton.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Taymour_Ghazi.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Jim_French.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Chad_Coleman.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Earl_Alexander.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Jen_Taylor.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Rochelle_Aytes.html",
-    "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Vince_Valenzuela.html"
-  ]
-}
+[
+   {
+       "Nombre": "Bernard Fouquet",
+       "Usuario": "BellFQT",
+       "Rol": "Fundador",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Bernard_Fouquet.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Bernard_Fouquet.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Bernard_Fouquet.html"
+       }
+    },
+    {
+       "Nombre": "Sean Bennett",
+       "Usuario": "SeannnL",
+       "Rol": "Fundador",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Sean_Bennett.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Sean_Bennett.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Sean_Bennett.html"
+       }
+    },
+    {
+       "Nombre": "Sonja Kinski",
+       "Usuario": "Zonya",
+       "Rol": "Fundadora",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Sonja_Kinski.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Sonja_Kinski.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Sonja_Kinski.html"
+       }
+    },
+    {
+       "Nombre": "Taylor Knox",
+       "Usuario": "Knoxis",
+       "Rol": "Fundador",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Taylor_Knox.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Taylor_Knox.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Taylor_Knox.html"
+       }
+    },
+    {
+       "Nombre": "Darnell Rice",
+       "Usuario": "DarchRice",
+       "Rol": "Fotógrafo",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Darnell_Rice.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Darnell_Rice.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Darnell_Rice.html"
+       }
+    },
+    {
+       "Nombre": "Jesy Mckinney",
+       "Usuario": "JellyKing",
+       "Rol": "Fotógrafo",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Jesy_Mckinney.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Jesy_Mckinney.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Jesy_Mckinney.html"
+       }
+    },
+    {
+       "Nombre": "Shanola Hampton",
+       "Usuario": "ShanelleHamp",
+       "Rol": "Fotógrafa",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Shanola_Hampton.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Shanola_Hampton.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Shanola_Hampton.html"
+       }
+    },
+    {
+       "Nombre": "Taymour Ghazi",
+       "Usuario": "TayNerzi",
+       "Rol": "Fotógrafo",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Taymour_Ghazi.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Taymour_Ghazi.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Taymour_Ghazi.html"
+       }
+    },
+    {
+       "Nombre": "Jim French",
+       "Usuario": "Frenchie",
+       "Rol": "Marketing",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Jim_French.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Jim_French.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Jim_French.html"
+       }
+    },
+    {
+       "Nombre": "Chad Coleman",
+       "Usuario": "CoChad",
+       "Rol": "Redactor",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Chad_Coleman.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Chad_Coleman.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Chad_Coleman.html"
+       }
+    },
+    {
+       "Nombre": "Earl Alexander",
+       "Usuario": "Aloxander",
+       "Rol": "Redactor",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Earl_Alexander.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Earl_Alexander.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Earl_Alexander.html"
+       }
+    },
+    {
+       "Nombre": "Jen Taylor",
+       "Usuario": "JenyZ",
+       "Rol": "Redactora",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Jen_Taylor.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Jen_Taylor.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Jen_Taylor.html"
+       }
+    },
+    {
+       "Nombre": "Rochelle Aytes",
+       "Usuario": "RochTes",
+       "Rol": "Redactora",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Rochelle_Aytes.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Rochelle_Aytes.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Rochelle_Aytes.html"
+       }
+    },
+    {
+       "Nombre": "Vince Valenzuela",
+       "Usuario": "VinFRenzuela",
+       "Rol": "Redactor",
+       "URL": {
+           "chiquitos": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/chiquitos/Vince_Valenzuela.html",
+           "normales": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/normales/Vince_Valenzuela.html",
+           "gigantes": "https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/html/elementos/miembros/gigantes/Vince_Valenzuela.html"
+       }
+    }
+]
