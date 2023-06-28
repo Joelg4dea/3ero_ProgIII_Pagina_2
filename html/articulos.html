@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="../estilos.css">
-   <TITLE>Mi primer documento HTML</TITLE>
+   <TITLE>Artículos</TITLE>
 </head>
 
 <body id="body_articulos">
@@ -26,6 +26,48 @@
    <!-- #region código javascript  -->
    <script src="../scripts/cargas.js"></script>
    <script>
+      // #region Declaración de variables globales
+      // Variables globales que contendrán los artículos
+      var articulos_url = new Array();
+
+      // Variables globales que contienen los html para CARGAR MÁS y el ICONO DE CARGA
+      const elemento_ver_mas = '<div id="elemento_ver_mas">Cargar más</div>';
+      const icono_de_carga = '<img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin: 10px auto 30px;max-height: 70px;display: block">';
+      // #endregion
+
+
+      // función que realiza la inserción de los artículos, de manera asíncrona.
+      async function insertarMasArticulos() {
+         // insertado de los articulos más recientes de la lista de articulos (solo 10)
+         for (let index_a = 0; index_a < 10 && index_a < articulos_url.length; index_a++) {
+            // Insertar el ícono de carga (para más dinamismo)
+            insertarStringCSS(icono_de_carga, 'div#cuerpo section#articulos');
+
+            // Insertar el artículo
+            await insertarContenidoCSS(articulos_url[index_a], 'div#cuerpo section#articulos');
+
+            // quitar el ícono de carga
+            eliminarSegunCSS('div#cuerpo section#articulos img.icono_de_carga');
+         }
+
+         // eliminación de los primeros 10 artículos de la lista (para no insertarlos de vuelta)
+         articulos_url = articulos_url.slice(10);
+
+         // si todavía quedan artículos sin insertar, se inserta el botón "cargar más" debajo de todo
+         if (articulos_url.length) {
+            // insertado del botón
+            await insertarStringCSS(elemento_ver_mas, 'div#cuerpo section#articulos');
+
+            // función que se ejecutará al hacer click en el botón.
+            (document.getElementById('elemento_ver_mas')).addEventListener('click', function () {
+               // La función quitará el botón "cargar más", e insertará los artículos restantes.
+               eliminarSegunID('elemento_ver_mas');
+               insertarMasArticulos();
+            });
+         }
+      }
+
+
       // función que realiza la inserción de todos los elementos, de manera asíncrona.
       async function precedimientoAsincrono() {
          // #region cargar lista de elementos
@@ -57,17 +99,15 @@
 
          // Cambiar titular, para que contenga el tipo de sección
          insertarStringCSSalPrincipio('Sección ' + seccion.replace(/^./, seccion[0].toUpperCase()), 'section#articulos span.titular')
+         // #endregion
 
 
          // #region insertado de los artículos de manera dinámica
-         // definición de articulos a insetar (y ordenado según fecha)
-         var articulos = articulos[seccion].sort().reverse();
+         // definición de articulos a insertar (y ordenado según fecha)
+         articulos_url = ((articulos[seccion]).map(function(articulo) {return articulo.URL})).sort().reverse();
          // insertado de los articulos
-         for (let index = 0; index < articulos.length; index++) {
-            await insertarContenidoCSS(articulos[index], 'section#articulos');
-         }
-         // #endregion
-
+         insertarMasArticulos();
+         // quitado del ícono de carga
          eliminarSegunCSS('section#articulos span.titular img.icono_de_carga');
          // #endregion
       }

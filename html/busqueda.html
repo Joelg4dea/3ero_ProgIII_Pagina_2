@@ -6,48 +6,203 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="../estilos.css">
-   <TITLE>Mi primer documento HTML</TITLE>
+   <TITLE>Buscador</TITLE>
 </head>
 
-<body id="body_alternativo">
+<body id="body_buscador">
    <!-- los HTML se insertan dinamicamente mediante javascript. Ver carpeta JSON para saber la localizacion de los HTML y <Scripts> para la inserción  -->
+   <!-- #region BODY  -->
    <header id="cabecera_chica"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 10px;"></header> 
 
    <div id="cuerpo">
-
       <section id="presentacion">
-
-         <span class="titular">Buscador</span>
-
-         <ul id="pres_elementos">
-            <li><img src="../imagenes/otros/cargando.gif" style="max-height: 80px;display: block;margin-left: auto;margin-right: auto;padding: 25px;"></li>
-         </ul>
-
+         <span class="titular">Buscador<img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin-top: 7px;max-height: 30px;float: right;"></span>
+         <div class="mensaje_anclado">No se encontraron elementos con el criterio de búsqueda</div>
       </section>
-
+      <section id="articulos">
+      </section>
    </div>
 
    <footer id="pie_chico"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 25px;"></footer>
+   <!-- #endregion BODY  -->
 
-   <!-- código javascript  -->
+   <!-- #region código javascript  -->
    <script src="../scripts/cargas.js"></script>
    <script>
-      // función que realiza la inserción de todos los html, de manera asíncrona.
-      async function precedimientoAsincrono() {
-         // cargar JSON's
-         var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
-         var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
+      // #region Declaración de variables globales
+      // Variables globales que contendrán los artículos
+      var articulos_filtrados = new Array();
+      var articulos_url = new Array();
+      var articulos_url_chica = new Array();
+
+      // Variables globales que contienen los html para CARGAR MÁS y el ICONO DE CARGA
+      const elemento_ver_mas = '<div id="elemento_ver_mas">Cargar más</div>';
+      const icono_de_carga = '<img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin: 10px auto 30px;max-height: 70px;display: block">';
+      // #endregion
 
 
-         // insertar HTML's externos
-         // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA LOS DEMÁS}
-         await reemplazarContenido(cabeceras.chica, "cabecera_chica");
-         await reemplazarContenido(pies.secundario, "pie_chico");
+      // función que realiza la inserción de los artículos, de manera asíncrona.
+      async function insertarMasArticulos() {
+         // insertado de los articulos más recientes de la lista de articulos (solo 10)
+         for (let index_a = 0; index_a < 10 && index_a < articulos_url_chica.length; index_a++) {
+            // Insertar el ícono de carga (para más dinamismo)
+            insertarStringCSS(icono_de_carga, 'div#cuerpo section#articulos');
+
+            // a continuación se buscará el artículo que sea más reciente
+            for (let index_b = 0; index_b < articulos_url.length; index_b++) {
+               if (articulos_url[index_b].includes(articulos_url_chica[index_a])) {
+                  // insertado del artículo en el bloque de artículos
+                  await insertarContenidoCSS(articulos_url[index_b], 'div#cuerpo section#articulos');
+                  break;
+               }
+            }
+
+            // quitar el ícono de carga
+            eliminarSegunCSS('div#cuerpo section#articulos img.icono_de_carga');
+         }
+
+         // eliminación de los primeros 10 artículos de la lista (para no insertarlos de vuelta)
+         articulos_url_chica = articulos_url_chica.slice(10);
+
+         // si todavía quedan artículos sin insertar, se inserta el botón "cargar más" debajo de todo
+         if (articulos_url_chica.length) {
+            // insertado del botón
+            await insertarStringCSS(elemento_ver_mas, 'div#cuerpo section#articulos');
+
+            // función que se ejecutará al hacer click en el botón.
+            (document.getElementById('elemento_ver_mas')).addEventListener('click', function () {
+               // La función quitará el botón "cargar más", e insertará los artículos restantes.
+               eliminarSegunID('elemento_ver_mas');
+               insertarMasArticulos();
+            });
+         }
       }
 
+      function mostrar_error(elemento) {
+         document.querySelector(elemento).style.padding = '10px'
+         document.querySelector(elemento).style.fontSize = '20px'
+         document.querySelector(elemento).style.margin = '0px 20px 30px'
+         document.querySelector(elemento).style.maxHeight = '100px'
+      }
+      
+      // función que realiza la inserción de todos los html, de manera asíncrona.
+      async function precedimientoAsincrono() {
+         // #region cargar JSON's
+         var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
+         var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
+         var articulos = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/articulos.json');
+         // #endregion
 
 
-      //////////////////////////////////// document.querySelector('section#presentacion ul#pres_elementos li').remove();
+         // #region insertar HTML's de cabecera/pie
+         // cargado del contenido de la cabecera para insertarlo en <header id="cabecera"> {LO MISMO PARA EL FOOTER}
+         reemplazarContenido(cabeceras.chica, "cabecera_chica");
+         reemplazarContenido(pies.secundario, "pie_chico");
+         // #endregion
+
+
+         // procedimientos para buscar y filtrar los resultados
+         // #region obtención de los parámetros de búsqueda
+         var parametros_de_busqueda = new URLSearchParams((new URL(window.location.href)).search);
+
+         // si no se especificó parámetros de búsqueda, se redirecciona a la página de búsqueda avanzada.
+         if (parametros_de_busqueda.size == 0 || (
+            !parametros_de_busqueda.get('titulo') && !parametros_de_busqueda.get('fecha')
+            && !parametros_de_busqueda.get('texto') && !parametros_de_busqueda.get('etiqueta')
+            && !parametros_de_busqueda.get('usuarios') && !parametros_de_busqueda.get('seccion')
+         )) {
+            // busquedaAvanzada();
+            return;
+         }
+         // #endregion
+
+         // #region filtrar artículos según parámetros
+         // usuarios=true|1|{algo}
+         // #region Si la busqueda es sobre usuarios...
+         if (parametros_de_busqueda.get('usuario') && parametros_de_busqueda.get('usuarios')) {
+            
+         } else {
+         // #endregion
+         // #region Si la busqueda es sobre artículos...
+            // #region filtrar los artículos según sección
+            if (!parametros_de_busqueda.get('seccion') || (parametros_de_busqueda.get('seccion') == "todas")) {
+               // si no se especificó ninguna sección, se juntan todos los artículos
+               articulos_filtrados = ((articulos.accesorios).concat(articulos.camaras).concat(articulos.celulares).concat(articulos.lentes));
+            } else {
+               // filtrado de artículos según secciones especificadas
+               for (let seccion of parametros_de_busqueda.get('seccion').split(',')) {
+                  articulos_filtrados = articulos_filtrados.concat(articulos[seccion]);
+               }
+            }
+            // #endregion
+
+            // #region filtrar los artículos según usuario
+            if (parametros_de_busqueda.get('usuarios')) {
+               articulos_filtrados = borrarSegun(articulos_filtrados, 'miembro', parametros_de_busqueda.get('usuarios').split(','), 2);
+            }
+            // #endregion
+
+            // #region filtrar los artículos según etiquetas
+            if (parametros_de_busqueda.get('etiqueta')) {
+               articulos_filtrados = borrarSegun(articulos_filtrados, 'etiquetas', parametros_de_busqueda.get('etiqueta').split(','), 1);
+            }
+            // #endregion
+
+            // #region filtrar los artículos según la fecha
+            if (parametros_de_busqueda.get('fecha')) {
+               articulos_filtrados = borrarSegun(articulos_filtrados, 'fecha', parametros_de_busqueda.get('fecha').split(','), 2);
+            }
+            // #endregion
+
+            // #region filtrar los artículos según el título
+            if (parametros_de_busqueda.get('titulo')) {
+               articulos_filtrados = borrarSegun(articulos_filtrados, 'titulo', parametros_de_busqueda.get('titulo').split(' '), 2);
+            }
+            // #endregion
+
+            // #region filtrar los artículos según el texto que contiene
+            if (parametros_de_busqueda.get('texto')) {
+               if (parametros_de_busqueda.get('acentos')) {
+                  articulos_filtrados = await borrarSegunTexto(articulos_filtrados, parametros_de_busqueda.get('texto').split(' '), true);
+               } else {
+                  articulos_filtrados = await borrarSegunTexto(articulos_filtrados, parametros_de_busqueda.get('texto').split(' '), false);
+               }
+            }
+            // #endregion
+
+
+
+
+
+
+
+
+
+            // crear función buscar(), que se utilizará también en el perfil de miembros para mostrar los artículos publicados por el miembro
+         }
+         // #endregion
+         // #endregion
+
+         // #region insertar artículos de manera dinámica
+         if (articulos_filtrados.length) {
+            // concatenación de todos los artículos en una sola lista
+            articulos_url = (articulos_filtrados).map(function(articulo) {return articulo.URL})
+            // remoción de la parte más redundante de los elementos, y sorteamiento según fecha (más recientes primero)
+            articulos_url_chica = (articulos_url.map(function (articulo) { return articulo.replace(/^.*\//, ""); })).sort().reverse();
+
+            // llamada a la función para insertar los artículos encontrados.
+            insertarMasArticulos();
+         } else {
+            // mostrar mensaje "sin resultados"
+            mostrar_error('body#body_buscador div#cuerpo section#presentacion div.mensaje_anclado');
+            // mostrar buscador para realizar otra búsqueda, y busqueda avanzada
+         }
+         
+         // eliminar ícono de carga del titular
+         eliminarSegunCSS('div#cuerpo section#presentacion span.titular img.icono_de_carga');
+         // #endregion
+
+// MODO BÚSQUEDA ESTRICTA O MODO DE BÚSQUEDA {...}
 
 
 
@@ -58,10 +213,19 @@
 
 
 
-      // llamada al procedimiento asíncrono.
-      precedimientoAsincrono();
+
+
+         // Cambiar titular, para que contenga el tipo de sección
+         // insertarStringCSSalPrincipio('Sección ' + seccion.replace(/^./, seccion[0].toUpperCase()), 'section#articulos span.titular')
+         // #endregion
+      }
+
+      // Cosas que se hacen MIENTRAS el documento carga..
+      document.addEventListener('DOMContentLoaded', function() {
+         precedimientoAsincrono();
+      });
    </script>
-   <!-- código javascript  -->
+   <!-- #endregion código javascript  -->
 </body>
 
 </html>

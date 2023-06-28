@@ -6,155 +6,65 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="../estilos.css">
-   <TITLE>Mi primer documento HTML</TITLE>
+   <TITLE>Sobre Nosotros</TITLE>
 </head>
 
-<body>
+<body id="body_alternativo">
    <!-- los HTML se insertan dinamicamente mediante javascript. Ver carpeta JSON para saber la localizacion de los HTML y <Scripts> para la inserción  -->
    <!-- #region BODY  -->
-   <header id="cabecera"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;text-align:center;display: block;margin-left: auto;margin-right: auto;margin-top: 50px;"></header> 
+   <header id="cabecera_chica"><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 10px;"></header> 
 
    <div id="cuerpo">
 
-      <section id="bienvenida">
-         <div class="titular_gigante">¡Bienvenido a Lens 4 Gear!</div>
+      <section id="presentacion">
 
-         <div class="mensaje">En nuestra web podés encontrar reseñas y recomendaciones sobre productos/accesorios relacionados a la fotografía.<br><br
-            >¡Y También cosas variadas de la comunidad!<br><br><br
-            >No te olvides de seguir a la horda
-         </div>
+         <div id="sobre_nosotros">
+            <span id="s_n_titulo">Quiénes somos</span>
+            <div class="s_n_mensaje">
+               <img class="s_n_img" src="../imagenes/logo_w.png">
+               <span class="s_n_texto">¡Bienvenido a Lens 4 Gear!<br><br>Nuestro sitio web busca entretener e informar a entusiastas y a todos aquellos que quieran aumentar sus conocimientos en
+                  la fotografía. Actualmente somos 4 redactores, ¡Nos encanta la fotografía, los lentes y los gadgets más locos del
+                  mercado! ¡El mundillo nos apasiona tanto como a ti!<br><br>Tenemos el compromiso de traer una gran variedad de contenido
+                  relacionado al medio, desde reseñas de cámaras o lentes, hasta accesorios que no pueden faltar en tu arsenal. Y no nos
+                  olvidamos de los celulares, ¡Sabemos muy bien el potencial que tienen!
+               </span>
+            </div>
+            <div class="s_n_mensaje">
+               <img class="s_n_img_r" src="../imagenes/marcas/Aperture_Science_w.png">
+               <span class="s_n_texto">Nos enorgullece no solo brindar un servicio de calidad en el ámbito de la fotografía, sino también mantenernos actualizados con las últimas tendencias y avances tecnológicos.<br><br>Reconocemos que el mundo de la fotografía está en constante evolución, y entendemos la importancia de contar con información actualizada sobre los equipos y la tecnología disponibles en el mercado.<br><br>Nuestro equipo de expertos se esfuerza continuamente por estar al tanto de las novedades y las mejoras en los equipos fotográficos. Desde cámaras profesionales hasta smartphones con cámaras de alta resolución, nuestro objetivo es brindarte información detallada y precisa para ayudarte a tomar decisiones certeras sobre tus compras.<br><br>Realizamos rigurosas pruebas y revisiones de los productos líderes en el mercado para evaluar su rendimiento, calidad y funcionalidad. Nuestro equipo se sumerge en la experiencia de utilizar cada equipo y accesorio, explorando sus características, opciones de personalización y facilidad de uso. De esta manera, podemos afirmar que nuestras recomendaciones son confiables y basadas en pruebas concretas.</span>
+            </div>
+            <div class="s_n_redes">
+               <iframe class="s_n_videoYT" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0" title="Suprapixel" src="https://www.youtube.com/embed/c2_yeKn7QPQ"></iframe>
+               <span class="s_n_texto">No importa si ya sos profesional o simplemente un aficionado, en Lens 4 Gear siempre encontrarás algo interesante y útil que te ayudará a mejorar.<br><br>Nuestro objetivo es crear un lugar donde la comunidad de la fotografía pueda descubrir y aprender.</span>
 
-         <div id="Redes">
-            <ul>
-               <a href="https://www.instagram.com/" target="_blank"><li><img src="../imagenes/marcas/instagram_w.png">/Lens4Gear</li></a>
-               <a href="https://www.youtube.com/" target="_blank"><li><img src="../imagenes/marcas/YouTube_w.png">/Lens4Gear</li></a>
-               <a href="https://www.facebook.com/" target="_blank"><li><img src="../imagenes/marcas/facebook_w.png">/Lens4Gear</li></a>
-               <a href="https://www.twitter.com/" target="_blank"><li><img src="../imagenes/marcas/twitter_w.png">@Lens4Gear</li></a>
-            </ul>
+               <span class="s_n_texto"><br><br>Seguinos en nuestras redes para ver más de lo que tenemos para ofrecer</span>
+               <ul id="s_n_redes_lista">
+                  <a href="https://www.Instagram.com/" target="_blank"><li><img src="../imagenes/marcas/Instagram_w.png"></li></a
+                  ><a href="https://www.Facebook.com/" target="_blank"><li><img src="../imagenes/marcas/Facebook_w.png"></li></a
+                  ><a href="https://www.Twitter.com/" target="_blank"><li><img src="../imagenes/marcas/Twitter_w.png"></li></a
+                  ><a href="https://www.YouTube.com/" target="_blank"><li><img src="../imagenes/marcas/YouTube_w.png"></li></a>
+               </ul>
+               <span id="lateral_titulo">- <a class="texto_enlace" href="miembros.html">Equipo de Lens 4 Gear</a> -</span>
+            </div>
+           
          </div>
       </section>
-
-      <section id="articulos">
-         <span class="titular">Artículos Recientes<img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin-top: 7px;max-height: 30px;float: right;"></span>
-      </section>
-
-      <aside>
-         <div class="etiquetas"><span id="lateral_titulo"><a class="texto_enlace" href="etiquetas.html">Etiquetas</a></span><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin-right: 0px;max-height: 25px;float: right;"><br>
-            <ul>
-            </ul>
-            <div class="ver_mas"><a class="texto_enlace" href="etiquetas.html">Ver todas..</a></div>
-         </div>
-
-         <div class="miembros"><span id="lateral_titulo"><a class="texto_enlace" href="miembros.html">Staff</a></span><img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin-right: 0px;max-height: 25px;float: right;">
-            <ul>
-            </ul>
-            <div class="ver_mas"><a class="texto_enlace" href="miembros.html">Ver todos..</a></div>
-         </div>
-      </aside>
-
    </div>
-
-   <footer id="pie"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 25px;"></footer>
    <!-- #endregion BODY  -->
 
    <!-- #region código javascript  -->
    <script src="../scripts/cargas.js"></script>
    <script>
-      // #region Declaración de variables globales
-      // Variables globales que contendrán los artículos
-      var articulos_url = new Array();
-      var articulos_url_chica = new Array();
-
-      // Variables globales que contienen los html para CARGAR MÁS y el ICONO DE CARGA
-      const elemento_ver_mas = '<div id="elemento_ver_mas">Cargar más</div>';
-      const icono_de_carga = '<img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin: 10px auto 30px;max-height: 70px;display: block">';
-      // #endregion
-
-      // función que realiza la inserción de los artículos, de manera asíncrona.
-      async function insertarMasArticulos() {
-         // insertado de los articulos más recientes de la lista de articulos (solo 10)
-         for (let index_a = 0; index_a < 10; index_a++) {
-            for (let index_b = 0; index_b < articulos_url.length; index_b++) {
-               if (articulos_url[index_b].includes(articulos_url_chica[index_a])) {
-                  await insertarContenidoCSS(articulos_url[index_b], 'div#cuerpo section#articulos');
-                  break;
-               }
-            }
-
-
-            // después de insertar el primer artículo, se quita el ícono de carga
-            if (index_a == 0) {
-               eliminarSegunCSS('div#cuerpo section#articulos span.titular img.icono_de_carga, div#cuerpo section#articulos img.icono_de_carga');
-            }
-         }
-
-         // // eliminación del ícono de carga de artículos
-         // eliminarSegunCSS('div#cuerpo section#articulos span.titular img.icono_de_carga, div#cuerpo section#articulos img.icono_de_carga');
-
-         // eliminación de los primeros 10 artículos de la lista (para no insertarlos de vuelta)
-         articulos_url_chica = articulos_url_chica.slice(10);
-
-         // si todavía quedan artículos sin insertar, se inseta el botón "cargar más"
-         if (articulos_url_chica.length) {
-            // insertado del botón
-            await insertarStringCSS(elemento_ver_mas, 'div#cuerpo section#articulos');
-
-            // función que se ejecutara al hacer click en el botón.
-            (document.getElementById('elemento_ver_mas')).addEventListener('click', function () {
-               // La función quitará el botón "cargar más", mostrara el 'cargando' e insertará los artículos nuevamente.
-               insertarStringCSS(icono_de_carga, 'div#cuerpo section#articulos');
-               eliminarSegunID('elemento_ver_mas');
-               insertarMasArticulos();
-            });
-         }
-      }
-
-      // función que realiza la inserción de todos los html, de manera asíncrona.
+      // función que realiza la inserción de todos los elementos, de manera asíncrona.
       async function precedimientoAsincrono() {
-         // #region cargar JSON's
+         // #region cargar lista de elementos
          var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
-         var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
-         var miembros = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/miembros.json');
-         var articulos = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/articulos.json');
-         var etiquetas = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/etiquetas.json');
          // #endregion
 
 
-         // #region insertar HTML's de cabecera/pie
-         // cargado del contenido de la cabecera para insertarlo en <header id="cabecera"> {LO MISMO PARA EL FOOTER}
-         reemplazarContenido(cabeceras.normal, "cabecera");
-         reemplazarContenido(pies.normal, "pie");
-         // #endregion
-
-
-         // #region insertar artículos de manera dinámica
-         // concatenación de todos los artículos en una sola lista
-         articulos_url = (articulos.accesorios).concat(articulos.camaras).concat(articulos.celulares).concat(articulos.lentes)
-         // remoción de la parte más redundante de los elementos, y sorteamiento según fecha (más recientes primero)
-         articulos_url_chica = (articulos_url.map(function (articulo) { return articulo.replace(/^.*\//, ""); })).sort().reverse();
-
-         // llamada a la función para insertar los artículos encontrados.
-         insertarMasArticulos();
-         // #endregion
-
-
-         // #region insertar etiquetas de manera dinámica
-         // insertar 24 etiquetas (solo insertar 2 grupos de etiquetas) (cada grupo contiene 12 etiquetas)
-         for (let index = 0; index < 2; index++) {
-            await insertarContenidoCSS(etiquetas[index], 'div.etiquetas ul');
-         }
-         // quitado del ícono de carga de miembros
-         eliminarSegunCSS('div.etiquetas img.icono_de_carga');
-         // #endregion
-
-
-         // #region insertar miembros de manera dinámica
-         // cargar los miembros desde la lista de miembros (solo 5)
-         for (let index = 0; index < 5; index++) {
-            await insertarContenidoCSS(miembros.chiquitos[index], 'div.miembros ul');
-         }
-         // quitado del ícono de carga de miembros
-         eliminarSegunCSS('div.miembros img.icono_de_carga');
+         // #region insertar HTML's externos
+         // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera">
+         reemplazarContenido(cabeceras.chica, "cabecera_chica");
          // #endregion
       }
 

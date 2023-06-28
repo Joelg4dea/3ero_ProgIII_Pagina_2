@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="../estilos.css">
-   <TITLE>Mi primer documento HTML</TITLE>
+   <TITLE>Etiquetas</TITLE>
 </head>
 
 <body id="body_etiquetas">
@@ -43,13 +43,13 @@
       // función que realiza la inserción de las etiquetas, de manera asíncrona.
       async function insertarMasEtiquetas() {
          // insertado de las etiquetas de la lista de etiquetas (solo 36)
-         for (let index = 0; index < 4; index++) {
+         for (let index = 0; index < 4 && index < etiquetas.length; index++) {
+            insertarStringCSS(icono_de_carga, 'div#cuerpo section#presentacion');
+
             await insertarContenidoCSS(etiquetas[index], 'div#cuerpo section#presentacion ul#pres_elementos');
 
             // después de insertar la primer etiqueta, se quita el ícono de carga
-            if (index == 0) {
-               eliminarSegunCSS('div#cuerpo section#presentacion span.titular img.icono_de_carga, div#cuerpo section#presentacion img.icono_de_carga');
-            }
+            eliminarSegunCSS('div#cuerpo section#presentacion img.icono_de_carga');
          }
 
          // eliminación de las primeras 4*12 etiquetas de la lista (para no insertarlas de vuelta)
@@ -63,7 +63,6 @@
             // función que se ejecutara al hacer click en el botón.
             (document.getElementById('elemento_ver_mas')).addEventListener('click', function () {
                // La función quitará el botón "cargar más", mostrara el 'cargando' e insertará las etiquetas nuevamente.
-               insertarStringCSS(icono_de_carga, 'div#cuerpo section#presentacion');
                eliminarSegunID('elemento_ver_mas');
                insertarMasEtiquetas();
             });
@@ -88,7 +87,12 @@
 
 
          // #region insertar etiquetas de manera dinámica
+         // obtención de los URL de las etiquetas
+         etiquetas = etiquetas.map(function(etiqueta) {return etiqueta.URL})
+         // insetado de etiquetas
          insertarMasEtiquetas();
+         // eliminación del ícono de carga
+         eliminarSegunCSS('div#cuerpo section#presentacion span.titular img.icono_de_carga');
          // #endregion
       }
 

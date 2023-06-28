@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="../estilos.css">
-   <TITLE>Mi primer documento HTML</TITLE>
+   <TITLE>Perfil de usuario</TITLE>
 </head>
 
 <body id="body_alternativo">
@@ -14,17 +14,22 @@
    <header id="cabecera_chica"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 10px;"></header> 
 
    <div id="cuerpo">
-
       <section id="presentacion">
+         <span class="titular"></span>
 
-         <span class="titular">Staff</span>
-
-         <ul id="pres_elementos">
-            <li><img src="../imagenes/otros/cargando.gif" style="max-height: 80px;display: block;margin-left: auto;margin-right: auto;padding: 25px;"></li>
-         </ul>
-
+         <div id="perfil">
+            <img id="perfil_imagen" src="../imagenes/otros/cargando.gif">
+            <!-- <img id="perfil_imagen" src="../imagenes/miembros/Bernard Fouquet.jpg"> -->
+            <!-- <div id="perfil_descripcion"><img src="../imagenes/otros/cargando.gif" style="max-height: 80px;display: block;margin-left: auto;margin-right: auto;padding: 25px;"></div> -->
+            <div id="perfil_informacion"><img src="../imagenes/otros/cargando.gif" style="max-height: 80px;display: block;margin-left: auto;margin-right: auto;padding: 25px;"></div>
+            <!-- <div id="perfil_informacion"></div> -->
+            <!-- <ul id="perfil_redes">
+               <li>Instagram: /sssss</li>
+               <li>Twitter: @sssss</li>
+               <li>Youtube: /sssss</li>
+            </ul> -->
+         </div>
       </section>
-
    </div>
 
    <footer id="pie_chico"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 25px;"></footer>
@@ -37,26 +42,40 @@
          // cargar JSON's
          var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
          var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
+         var miembros = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/miembros.json');
 
 
          // insertar HTML's externos
          // Cargar el contenido de la cabecera e insertarlo en <header id="cabecera"> {LO MISMO PARA LOS DEMÁS}
          await reemplazarContenido(cabeceras.chica, "cabecera_chica");
          await reemplazarContenido(pies.secundario, "pie_chico");
+
+
+         // procedimientos para buscar al miembro que se especifique
+         // #region obtención de los parámetros de búsqueda
+         var nombre_usuario = (new URLSearchParams((new URL(window.location.href)).search)).get('usuario');
+         // #endregion
+
+
+         // #region busqueda del usuario especificado en el parámetro de búsqueda
+         const miembro = miembros.find(miembro => miembro.Usuario.match(nombre_usuario))
+         // #endregion
+
+
+         // #region inserción de los datos del miembro
+         if (miembro) {
+            await insertarStringCSS(miembro.Nombre, 'span.titular')
+            await reemplazarContenido(miembro.URL.gigantes, 'perfil');
+         } else {
+         // #endregion
+         // #region Si el miembro no se encontró...
+
+         }
+         // #endregion
+
+
+
       }
-
-
-
-      //////////////////////////////////// document.querySelector('section#presentacion ul#pres_elementos li').remove();
-
-
-
-
-
-
-
-
-
 
       // llamada al procedimiento asíncrono.
       precedimientoAsincrono();

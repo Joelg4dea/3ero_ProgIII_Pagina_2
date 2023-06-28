@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="../estilos.css">
-   <TITLE>Mi primer documento HTML</TITLE>
+   <TITLE>Staff</TITLE>
 </head>
 
 <body id="body_miembros">
@@ -50,8 +50,9 @@
 
 
          // #region insertar lista de miembros de manera dinámica
+         miembros = miembros.map(miembro => miembro.URL.normales)
          // cargar todos los miembros desde la lista de miembros
-         for (const miembro of miembros.normales) {
+         for (const miembro of miembros) {
             await insertarContenidoCSS(miembro, 'section#presentacion ul#pres_elementos');
          }
 

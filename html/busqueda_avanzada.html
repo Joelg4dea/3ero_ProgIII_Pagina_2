@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="../estilos.css">
+   <TITLE>Búsqueda avanzada</TITLE>
+</head>
+
+<body id="body_alternativo">
+   <!-- los HTML se insertan dinamicamente mediante javascript. Ver carpeta JSON para saber la localizacion de los HTML y <Scripts> para la inserción  -->
+   <!-- #region BODY  -->
+   <header id="cabecera_chica"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 10px;"></header> 
+
+   <div id="cuerpo">
+
+      <section id="presentacion">
+
+         <span class="titular">Buscador</span>
+
+         <ul id="pres_elementos">
+            <li><img src="../imagenes/otros/cargando.gif" style="max-height: 80px;display: block;margin-left: auto;margin-right: auto;padding: 25px;"></li>
+         </ul>
+
+      </section>
+
+   </div>
+
+   <footer id="pie_chico"><img src="../imagenes/otros/cargando.gif" style="max-height: 30px;display: block;margin-left: auto;margin-right: auto;padding-top: 25px;"></footer>
+   <!-- #endregion BODY  -->
+
+   <!-- #region código javascript  -->
+   <script src="../scripts/cargas.js"></script>
+   <script>
+      // #region Declaración de variables globales
+      // Variables globales que contendrán los artículos
+      var articulos_url = new Array();
+      var articulos_url_chica = new Array();
+
+      // Variables globales que contienen los html para CARGAR MÁS y el ICONO DE CARGA
+      const elemento_ver_mas = '<div id="elemento_ver_mas">Cargar más</div>';
+      const icono_de_carga = '<img class="icono_de_carga" src="../imagenes/otros/cargando.gif" style="margin: 10px auto 30px;max-height: 70px;display: block">';
+      // #endregion
+
+
+      // función que realiza la inserción de todos los html, de manera asíncrona.
+      async function precedimientoAsincrono() {
+         // #region cargar JSON's
+         var cabeceras = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/cabeceras.json');
+         var pies = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/pies.json');
+         var miembros = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/miembros.json');
+         var articulos = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/articulos.json');
+         var etiquetas = await leerJSON('https://raw.githubusercontent.com/Joelg4dea/3ero_ProgIII_Pagina_2/main/json/etiquetas.json');
+         // #endregion
+
+
+         // #region insertar HTML's de cabecera/pie
+         // cargado del contenido de la cabecera para insertarlo en <header id="cabecera"> {LO MISMO PARA EL FOOTER}
+         reemplazarContenido(cabeceras.chica, "cabecera_chica");
+         reemplazarContenido(pies.secundario, "pie_chico");
+         // #endregion
+
+
+         // #region procedimientos para obtener los parámetros de búsqueda
+         var parametros_de_busqueda = new URLSearchParams((new URL(window.location.href)).search);
+
+         // si no se especificó parámetros de búsqueda, se redirecciona a la página de búsqueda avanzada.
+         if (parametros_de_busqueda.size == 0 || (
+                  !parametros_de_busqueda.get('seccion') && !parametros_de_busqueda.get('usuario') && !parametros_de_busqueda.get('texto') && !parametros_de_busqueda.get('etiqueta')
+               )
+            ) {
+            // busquedaAvanzada();
+         } else {
+            // iniciarBusqueda();
+         }
+         // Obtener el tipo de sección de la búsqueda
+         var seccion = parametros_de_busqueda.get('seccion');
+
+         // Cambiar titular, para que contenga el tipo de sección
+         insertarStringCSSalPrincipio('Sección ' + seccion.replace(/^./, seccion[0].toUpperCase()), 'section#articulos span.titular')
+         // #endregion
+      }
+
+      // Cosas que se hacen MIENTRAS el documento carga..
+      document.addEventListener('DOMContentLoaded', function() {
+         precedimientoAsincrono();
+      });
+   </script>
+   <!-- #endregion código javascript  -->
+</body>
+
+</html>
