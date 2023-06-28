@@ -5,7 +5,7 @@ body {
     background: #6C2D2D;
 }
 
-body#body_alternativo {
+body#body_alternativo, body#body_miembros, body#body_articulos, body#body_buscador {
     background: #5d2525;
 }
 /* #endregion */
@@ -142,10 +142,122 @@ div#cuerpo {
     float: none;
     display: table;
     min-width: 1070px;
+    min-height: 90vh;
 }
 /* #endregion */
 
 
+
+
+
+
+
+
+/* #region BUSCADOR */
+form#buscador_chico {
+    padding: 0px;
+    padding-bottom: 0px;
+    margin: 10px 20px 100px 0px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+input[type="text"] {
+    border: none;
+    box-shadow: none;
+    color: white;
+    background: none;
+    font-size: 15px;
+    outline: none;
+    padding: 10px;
+    min-width: 50px;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.593);
+    user-select: none;
+}
+
+form#buscador_chico input {
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+form#buscador_chico div.boton_busqueda {
+    min-width: 38px;
+    max-width: 43px;
+    min-height: 37px;
+    max-height: 43px;
+    background: none;
+    border-left: solid 3px white;
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: center;
+    transition: all 400ms ease;
+}
+
+form#buscador_chico div.boton_busqueda:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 20px 0px #00000021;
+}
+
+form#buscador_chico div.boton_busqueda:active {
+    box-shadow: inset 0px 0px 0px 0px #ffffff;
+}
+
+div.boton_busqueda img.icono_de_buscador {
+    max-width: 18px;
+    max-height: 18px;
+    opacity: 80%;
+    margin-bottom: 2px;
+}
+
+/* input.buscador_chico {
+    border-radius: 24px;
+    border: 3px solid #00000061;
+    box-shadow: none;
+    color: white;
+    background: #ffffff00;
+    font-size: 25px;
+    outline: none;
+    padding: 10px 70px 10px 20px;
+    width: 150px;
+} */
+
+/* input.buscador_mediano {
+    border-radius: 24px;
+    border: 3px solid #00000061;
+    box-shadow: none;
+    color: white;
+    background: #ffffff00;
+    font-size: 25px;
+    outline: none;
+    padding: 10px 70px 10px 20px;
+    width: 400px;
+} */
+
+/* input.buscador_grande {
+    border-radius: 24px;
+    border: 3px solid #00000061;
+    box-shadow: none;
+    color: white;
+    background: #ffffff00;
+    font-size: 25px;
+    outline: none;
+    padding: 10px 70px 10px 20px;
+    width: 400px;
+} */
+/* #endregion */
 
 
 /* #region BIENVENIDA */
@@ -244,7 +356,6 @@ div#Redes ul li img {
 
 /* #region ARTICULOS y PRESENTACIÓN */
 section#articulos, section#presentacion {
-    min-height: 850px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -286,7 +397,7 @@ section#articulos {
     float: left;
 }
 
-body#body_alternativo div#cuerpo section#articulos {
+body#body_articulos div#cuerpo section#articulos, body#body_buscador div#cuerpo section#articulos {
     margin-right: auto;
     margin-left: auto;
     float: none;
@@ -327,7 +438,6 @@ section#articulos article div.informacion {
     font-weight: bold;
     text-align: right;
 }
-
 article div.informacion .inf_etiquetas {
     float: left;
     overflow: hidden;
@@ -341,14 +451,20 @@ article div.informacion .inf_etiquetas ul {
     margin-left: 0px;
 }
 
+section#articulos article div.informacion .inf_etiquetas ul li:hover {
+    text-shadow: none;
+    opacity: 75%;
+}
+
 article div.informacion .inf_etiquetas ul li {
     opacity: 30%;
     margin: 0px 20px 0px 0px;
 }
 
-article div.informacion .inf_etiquetas ul li a:hover {
+article div.informacion .inf_etiquetas ul li a:hover, div.etiquetas ul li a.texto_enlace {
     text-decoration: none;
     color: currentColor;
+    transition: none;
 }
 /* #endregion */
 
@@ -374,7 +490,9 @@ section#presentacion ul#pres_elementos {
     padding: 0px;
     list-style-type: none;
 }
+/* #endregion */
 
+/* #region PRESENTACIÓN - interior */
 section#presentacion ul#pres_elementos li {
     background: #0000001a;
     border-radius: 0px;
@@ -382,8 +500,180 @@ section#presentacion ul#pres_elementos li {
 }
 /* #endregion */
 
-/* #region PRESENTACIÓN - interior */
-section#presentacion ul#pres_elementos li img.miembro_imagen {
+
+/* #region PRESENTACIÓN - ETIQUETAS */
+body#body_etiquetas div#cuerpo section#presentacion {
+    /* */
+}
+
+body#body_etiquetas div#cuerpo section#presentacion div.mensaje_anclado, body#body_buscador div#cuerpo section#presentacion div.mensaje_anclado {
+    max-width: 800px;
+    text-align: center;
+    margin: 0px 20px 30px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background: #00000026;
+    box-shadow: 6px 4px 11px 0px #00000075;
+    transition: all 400ms ease;
+    user-select: none;
+    opacity: 60%;
+}
+
+body#body_etiquetas div#cuerpo section#presentacion div.mensaje_anclado:hover, body#body_buscador div#cuerpo section#presentacion div.mensaje_anclado:hover {
+    opacity: 100%;
+}
+
+body#body_etiquetas div#cuerpo section#presentacion ul#pres_elementos {
+    text-align: center;
+}
+
+body#body_etiquetas div#cuerpo section#presentacion div#elemento_ver_mas {
+    margin: 30px auto 40px;
+}
+/* #endregion */
+
+
+/* #region PRESENTACIÓN - BUSCADOR */
+body#body_buscador div#cuerpo section#presentacion div.mensaje_anclado {
+    color: red;
+    background: white;
+    max-height: 0px;
+    font-size: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+/* #endregion */
+
+
+/* #region PRESENTACIÓN - SOBRE NOSOTROS */
+body#body_alternativo div#cuerpo section#presentacion div#sobre_nosotros {
+    text-align: center;
+    margin-top: 30px;
+}
+
+section#presentacion div#sobre_nosotros span#s_n_titulo {
+    color: white;
+    font-size: 40px;
+    display: block;
+    margin-bottom: 60px;
+}
+
+section#presentacion div#sobre_nosotros div.s_n_mensaje, section#presentacion div#sobre_nosotros div.s_n_redes {
+    margin-top: 70px;
+}
+
+section#presentacion div#sobre_nosotros div.s_n_redes {
+    margin-bottom: 40px;
+}
+
+img.s_n_img, img.s_n_img_r {
+    max-height: 180px;
+    margin: 0px 40px 0px 30px;
+}
+
+div#sobre_nosotros div.s_n_mensaje img.s_n_img {
+    float: left;
+} 
+
+div#sobre_nosotros div.s_n_mensaje img.s_n_img_r {
+    float: right;
+}
+
+div#sobre_nosotros div.s_n_mensaje span.s_n_texto, div#sobre_nosotros div.s_n_redes span.s_n_texto {
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    margin: 0px 30px;
+    display: block;
+}
+
+div#sobre_nosotros div.s_n_redes span.s_n_texto {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#sobre_nosotros div.s_n_redes iframe.s_n_videoYT {
+    min-width: 700px;
+    min-height: 300px;
+    margin-bottom: 30px;
+    user-select: none;
+}
+
+div#sobre_nosotros div.s_n_redes span#lateral_titulo {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    display: block;
+}
+/* #endregion */
+
+
+
+
+
+
+
+
+
+
+
+/* #region PRESENTACIÓN - interior - ETIQUETAS */
+body#body_etiquetas div#cuerpo section#presentacion ul#pres_elementos li {
+    background: #ff8a8a00;
+    border: solid 3px #00000047;
+    display: inline-block;
+    padding: 0px;
+    margin: 10px;
+}
+
+body#body_etiquetas div#cuerpo section#presentacion ul#pres_elementos li:hover {
+    box-shadow: 0px 0px 0px 3px #ffffff;
+}
+
+body#body_etiquetas div#cuerpo section#presentacion ul#pres_elementos li a.texto_enlace {
+    color: currentcolor;
+    text-decoration: none;
+    transition: all 400ms ease;
+    padding: 5px;
+    display: inline-block;
+}
+
+body#body_etiquetas div#cuerpo section#presentacion ul#pres_elementos li a.texto_enlace:hover {
+    text-decoration: none;
+    color: currentColor;
+}
+/* #endregion */
+
+
+/* #region PRESENTACIÓN - MIEMBROS*/
+body#body_miembros div#cuerpo section#presentacion {
+    max-width: 1100px
+}
+
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos {
+    max-width: 964px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+body#body_miembros div#cuerpo section#presentacion span.titular {
+    margin: 0px auto 40px;
+    max-width: 800px;
+}
+/* #endregion */
+
+/* #region PRESENTACIÓN - interior - MIEMBROS */
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li {
+    max-width: 400px;
+    display: inline-block;
+    transition: all 500ms ease;
+}
+
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li img.miembro_imagen, div#perfil img#perfil_imagen {
     width: 80px;
     height: 80px;
     float: left;
@@ -391,55 +681,83 @@ section#presentacion ul#pres_elementos li img.miembro_imagen {
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
+    transition: all 400ms ease;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos {
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li img.miembro_imagen:hover, div#perfil img#perfil_imagen:hover {
+    box-shadow: 0px 0px 0px 4px white;
+}
+
+/* #region MIEMBRO - datos */
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos {
     text-align: left;
     margin-left: 0px;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_nombre {
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_nombre {
     margin-top: 5px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
     display: inline-block;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_rol {
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_rol {
     margin-top: 2px;
-    font-size: 20px;
+    font-size: 18px;
     display: inline-block;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_descripcion {
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_descripcion {
     margin-top: 17px;
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     text-align: justify;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes {
+div.miembro_datos div.miembro_usuario {
+    display: inline-block;
+    font-size: 27px;
+    opacity: 40%;
+    color: white;
+    transition: all 400ms ease;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+div.miembro_datos div.miembro_usuario:hover {
+    opacity: 100%;
+}
+
+div.miembro_datos div.miembro_usuario a.texto_enlace:hover {
+    color: currentcolor;
+}
+
+/* #region MIEMBRO - redes */
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes {
     margin-top: 0px;
     margin-left: auto;
-    display: table;
+    display: flex;
     margin-bottom: 5px;
     padding-bottom: 0px;
+    align-items: center;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul {
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul, ul#s_n_redes_lista {
     padding: 0px;
-    margin: 0px auto 0px 20px;
+    margin: 0px 0px 0px auto;
     text-align: center;
     float: none;
-    display: block;
+    display: inline-block;
+    padding-inline-start: 0px;
+    /* max-width: 200px; */
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a {
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a, ul#s_n_redes_lista a {
     display: inline-block;
     margin: 20px 10px 0px;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li {
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li, ul#s_n_redes_lista a li {
     transition: all 150ms ease;
     display: inline-block;
     border-radius: 15px;
@@ -457,7 +775,7 @@ section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul
     opacity: 25%;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li:hover {
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li:hover, ul#s_n_redes_lista a li:hover {
     box-shadow: 0px 0px 0px 3px white;
     background: none;
     mix-blend-mode: normal;
@@ -466,8 +784,99 @@ section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul
     opacity: 90%;
 }
 
-section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li img{
+body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li div.miembro_datos div.miembro_redes ul a li img, ul#s_n_redes_lista a li img {
     height: 20px;
+}
+/* #endregion */
+/* #endregion */
+/* #endregion */
+
+
+/* #region PRESENTACIÓN - PERFIL */
+div#perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    transition: all 400ms ease;
+    align-content: center;
+}
+
+div#perfil div {
+    color: white;
+    padding: 20px 20px;
+    margin: 0px 20px 30px 20px;
+    transition: all 400ms ease;
+    border-radius: 10px;
+    background: #0000001a;
+    border-radius: 20px;
+    cursor: auto;
+}
+
+div#perfil img#perfil_imagen {
+    min-width: 175px;
+    min-height: 175px;
+    max-height: 175px;
+    flex-grow: 0;
+    margin: 0px 100px 30px;
+}
+
+div#perfil img#perfil_imagen:hover {
+    cursor: auto;
+}
+
+div#perfil div#perfil_descripcion {
+    border-radius: 20px;
+    min-width: 300px;
+    min-height: 150px;
+    flex-grow: 10;
+}
+
+div#perfil div#perfil_informacion {
+    background: #0000001a;
+    min-width: 400px;
+    min-height: 400px;
+    flex-grow: 10;
+    font-size: 20px;
+    text-align: justify;
+}
+
+div#perfil ul#perfil_redes {
+    display: flex;
+    list-style: none;
+    margin-block: 0px;
+    margin-inline: 0px;
+    padding-inline: 0px;
+    padding: 0px;
+    margin: 0px 0px 30px 0px;
+    border-radius: 10px;
+    min-width: 350px;
+    min-height: 50px;
+    flex-grow: 1;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div#perfil ul#perfil_redes li {
+    font-size: 50px;
+    flex-grow: 1;
+    /* margin: 0px 20px 20px; */
+    padding: 10px 20px;
+    text-align: left;
+    background: #0000001a;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+div#perfil div#perfil_descripcion:hover, div#perfil div#perfil_informacion:hover, div#perfil ul#perfil_redes li:hover, div#perfil img#perfil_imagen:hover {
+    box-shadow: 0px 0px 0px 4px #ffffff;
+    background: #00000033;
 }
 /* #endregion */
 
@@ -490,6 +899,33 @@ section#presentacion ul#pres_elementos li div.miembro_datos span.miembro_descrip
     margin-left: 0px;
     margin-top: 0px;
 }
+
+div#elemento_ver_mas {
+    opacity: 20%;
+    display: flex;
+    float: none;
+    clear: both;
+    height: 40px;
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    user-select: none;
+    border-radius: 45px;
+    transition: all 400ms ease;
+    color: white;
+    background: #000000ad;
+    font-size: 21px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+div#elemento_ver_mas:hover {
+    opacity: 60%;
+    cursor: pointer;
+    background: #00000045;
+}
 /* #endregion */
 
 
@@ -507,7 +943,7 @@ div#cuerpo Aside {
     margin-right: 0px;
     padding: 0px 0px 60px 0px;
     margin-left: 0px;
-    margin-top: 25px;
+    margin-top: 0px;
     float: right;
     color: white;
 }
@@ -636,6 +1072,11 @@ div.miembros ul li img {
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
+    transition: all 400ms ease;
+}
+
+div.miembros ul li img:hover {
+    box-shadow: 0px 0px 0px 2px white;
 }
 
 div.miembros ul li div.miembro_datos {
@@ -655,26 +1096,6 @@ div.miembros ul li div.miembro_datos span.miembro_rol {
     margin-top: 2px;
     font-size: 13px;
 }
-
-div.miembro_datos div.miembro_usuario {
-    float: left;
-    display: flow-root;
-    margin-top: 20px;
-    margin-right: 20px;
-    font-size: 27px;
-    opacity: 40%;
-    color: white;
-    transition: all 400ms ease;
-}
-
-div.miembro_datos div.miembro_usuario:hover {
-    opacity: 100%;
-}
-
-div.miembro_datos div.miembro_usuario a.texto_enlace:hover {
-    color: currentcolor;
-}
-
 /* #endregion */
 
 
@@ -938,6 +1359,28 @@ footer#pie div#interior ul#derecha li a, footer#pie_chico div#interior ul#derech
     
     footer#pie div#interior ul#derecha li a, footer#pie_chico div#interior ul#derecha li a {
         margin: 0px 30px;
+    }
+    /* #endregion */
+
+    form#buscador_chico {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body#body_alternativo div#cuerpo section#presentacion div#sobre_nosotros div.s_n_redes iframe.s_n_videoYT {
+        min-width: 70%;
+    }
+}
+
+@media (max-width: 980px) {
+    /* #region terminado */
+    body#body_miembros div#cuerpo section#presentacion ul#pres_elementos li {
+        max-width: 100%;
+    }
+
+    body#body_miembros div#cuerpo section#presentacion span.titular {
+        max-width: 90%;
     }
     /* #endregion */
 }
